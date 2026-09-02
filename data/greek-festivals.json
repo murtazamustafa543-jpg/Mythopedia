@@ -26,7 +26,8 @@
     }
   ],
   "related_deities": ["athena", "demeter", "dionysus", "zeus"],
-  "image": "images/greek/greek-festivals.jpg",
+  "image_landscape": "",
+  "image_portrait": "",
   "sources": [
     "Parker, Robert C.T. (2011). On Greek Religion. Cornell University Press.",
     "Bowden, Hugh (2010). Mystery Cults in the Ancient World. Thames and Hudson.",

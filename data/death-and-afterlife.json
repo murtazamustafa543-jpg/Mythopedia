@@ -26,7 +26,8 @@
     }
   ],
   "related_deities": ["demeter", "hermes", "hercules"],
-  "image": "images/greek/death-and-afterlife.jpg",
+  "image_landscape": "",
+  "image_portrait": "",
   "sources": [
     "Bowden, Hugh (2010). Mystery Cults in the Ancient World. Thames and Hudson.",
     "Burkert, Walter (1988). Ancient Mystery Cults. Harvard University Press.",

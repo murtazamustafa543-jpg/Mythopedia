@@ -26,7 +26,8 @@
     }
   ],
   "characters_involved": ["zeus", "athena", "odysseus"],
-  "image": "images/greek/trojan-war.jpg",
+  "image_landscape": "",
+  "image_portrait": "",
   "sources": [
     "Homer, Iliad",
     "Virgil, Aeneid (for the Trojan Horse episode)",

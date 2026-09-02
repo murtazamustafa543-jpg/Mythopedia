@@ -132,12 +132,18 @@ function renderHome() {
   };
   return `
     <div class="home-hero">
+      <img class="home-hero-image" data-tilt-image src="images/greek/download.jpg" alt="A Greek warrior and ancient ruins across a misty battlefield">
+      <div class="home-hero-shade"></div>
+      <div class="home-hero-copy">
       <div class="eyebrow">A REFERENCE FOR THE MYTHIC AND THE HISTORICAL</div>
-      <h1>The gods, heroes, and rites of ancient Greece</h1>
+      <h1>THE ANCIENT GREECE</h1>
       <div class="oxide-rule"></div>
       <p>An encyclopedia of Greek mythology and religion — the Olympians, the heroes who challenged them, the wars and journeys that defined them, and the temples, oracles, and rites through which they were worshipped.</p>
+      </div>
     </div>
     <div class="page" style="padding-top:0;">
+      <div class="home-categories">
+      <section class="category-section">
       <div class="section-head"><h2>Explore by category</h2></div>
       <div class="gateway">
         <a href="#/browse?filter=god" data-nav>
@@ -161,11 +167,15 @@ function renderHome() {
           <p>Temples, oracles, festivals, and how myth was actually practised.</p>
         </a>
       </div>
+      </section>
+      <section class="collection-section">
       <div class="section-head">
         <h2>Start here</h2>
         <a href="#/browse" data-nav>Browse all ${catalog.greek.length}</a>
       </div>
       <div class="grid">${featured.map(cardHTML).join("")}</div>
+      </section>
+      </div>
     </div>`;
 }
 
@@ -195,11 +205,14 @@ function renderBrowse(params) {
   return `
     <div class="crumb"><a href="#/" data-nav>Home</a> / Greek</div>
     <div class="page">
-      <div class="home-hero" style="padding:24px 0 0;">
+      <div class="greek-browse-hero">
+        <img class="greek-browse-image foreground-image" src="images/greek/greek1.jpg" alt="Ancient Greek learning and culture">
+        <div class="greek-browse-shade"></div>
         <div class="eyebrow">GREEK MYTHOLOGY & RELIGION</div>
-        <h1 style="font-size:44px;">Browse the full collection</h1>
+        <h1>Browse the full collection</h1>
         <div class="oxide-rule"></div>
       </div>
+      <div class="greek-collection">
       <input class="browse-search" id="browse-search" type="search" placeholder="Filter this list…" value="${escapeHtml(query)}">
       <div class="section-head" style="margin-top:24px;">
         <div class="tabs">
@@ -211,6 +224,7 @@ function renderBrowse(params) {
       </div>
       <div class="grid" id="landing-grid">
         ${filtered.length ? filtered.map(cardHTML).join("") : `<p class="empty-state">No entries match “${escapeHtml(query)}”.</p>`}
+      </div>
       </div>
     </div>`;
 }
@@ -276,7 +290,7 @@ async function renderCharacter(id) {
   // Check for image path in JSON
   const imageSrc = d.image || d.image_url;
   const portraitHTML = imageSrc
-    ? `<img class="portrait-img" src="${escapeHtml(imageSrc)}" alt="${escapeHtml(d.name)}" />`
+    ? `<img class="portrait-img foreground-image" src="${escapeHtml(imageSrc)}" alt="${escapeHtml(d.name)}" />`
     : `<span>${escapeHtml(initial)}</span>`;
 
   const quoteHTML = d.signature_quote?.text
@@ -328,19 +342,29 @@ async function renderEvent(id) {
     `<li><span class="phase-title">${escapeHtml(p.title)}</span>${escapeHtml(p.description)}</li>`).join("");
   const charsHTML = (d.characters_involved || []).map(c => `<li>${linkToEntry(c)}</li>`).join("");
   const sourcesHTML = (d.sources || []).map(s => `<li>${escapeHtml(s)}</li>`).join("");
+  const landscapeImage = d.image_landscape
+    ? `<img class="foreground-image" src="${escapeHtml(d.image_landscape)}" alt="${escapeHtml(d.title)}">`
+    : `<span>Landscape image space</span>`;
+  const portraitImage = d.image_portrait
+    ? `<img class="foreground-image" src="${escapeHtml(d.image_portrait)}" alt="${escapeHtml(d.title)}">`
+    : `<span>Portrait image space</span>`;
   return `
     <div class="crumb"><a href="#/" data-nav>Home</a> / <a href="#/browse" data-nav>Greek</a> / <a href="#/browse?filter=event" data-nav>Events</a> / ${escapeHtml(d.title)}</div>
     <div class="page">
-      <div class="hero-text" style="max-width:800px;">
-        <div class="domain-label">Event</div>
-        <h1 class="title">${escapeHtml(d.title)}</h1>
-        <div class="oxide-rule"></div>
-        <p class="summary">${escapeHtml(d.summary)}</p>
+      <div class="media-intro">
+        <div class="hero-text">
+          <div class="domain-label">Event</div>
+          <h1 class="title">${escapeHtml(d.title)}</h1>
+          <div class="oxide-rule"></div>
+          <p class="summary">${escapeHtml(d.summary)}</p>
+        </div>
+        <div class="landscape-slot">${landscapeImage}</div>
       </div>
       <div class="content">
         <aside class="sidebar">
           ${charsHTML ? `<div class="sidebar-block"><h3>Characters Involved</h3><ul class="rel-list">${charsHTML}</ul></div>` : ""}
           ${sourcesHTML ? `<div class="sidebar-block"><h3>Sources</h3><ul class="sources-list">${sourcesHTML}</ul></div>` : ""}
+          <div class="portrait-slot">${portraitImage}</div>
         </aside>
         <main class="main">
           <section><h2>Timeline</h2><ol class="phase-list">${phasesHTML}</ol></section>
@@ -356,19 +380,29 @@ async function renderTopic(id) {
     `<div class="aspect"><h3>${escapeHtml(a.title)}</h3><p>${linkifyAspect(a.description)}</p></div>`).join("");
   const deitiesHTML = (d.related_deities || []).map(c => `<li>${linkToEntry(c)}</li>`).join("");
   const sourcesHTML = (d.sources || []).map(s => `<li>${escapeHtml(s)}</li>`).join("");
+  const landscapeImage = d.image_landscape
+    ? `<img class="foreground-image" src="${escapeHtml(d.image_landscape)}" alt="${escapeHtml(d.title)}">`
+    : `<span>Landscape image space</span>`;
+  const portraitImage = d.image_portrait
+    ? `<img class="foreground-image" src="${escapeHtml(d.image_portrait)}" alt="${escapeHtml(d.title)}">`
+    : `<span>Portrait image space</span>`;
   return `
     <div class="crumb"><a href="#/" data-nav>Home</a> / <a href="#/browse" data-nav>Greek</a> / <a href="#/browse?filter=religion" data-nav>Religion & Practice</a> / ${escapeHtml(d.title)}</div>
     <div class="page">
-      <div class="hero-text" style="max-width:800px;">
-        <div class="domain-label">Religion & Practice</div>
-        <h1 class="title">${escapeHtml(d.title)}</h1>
-        <div class="oxide-rule"></div>
-        <p class="summary">${escapeHtml(d.summary)}</p>
+      <div class="media-intro">
+        <div class="hero-text">
+          <div class="domain-label">Religion & Practice</div>
+          <h1 class="title">${escapeHtml(d.title)}</h1>
+          <div class="oxide-rule"></div>
+          <p class="summary">${escapeHtml(d.summary)}</p>
+        </div>
+        <div class="landscape-slot">${landscapeImage}</div>
       </div>
       <div class="content">
         <aside class="sidebar">
           ${deitiesHTML ? `<div class="sidebar-block"><h3>Related Deities</h3><ul class="rel-list">${deitiesHTML}</ul></div>` : ""}
           ${sourcesHTML ? `<div class="sidebar-block"><h3>Sources</h3><ul class="sources-list">${sourcesHTML}</ul></div>` : ""}
+          <div class="portrait-slot">${portraitImage}</div>
         </aside>
         <main class="main">${aspectsHTML}</main>
       </div>
@@ -390,6 +424,59 @@ function setNavActive(route) {
   document.querySelectorAll(".nav-links a").forEach(a => {
     const f = a.dataset.navFilter;
     a.classList.toggle("active", Boolean(f && f === filter));
+  });
+}
+
+function wireHomeTilt() {
+  const hero = document.querySelector(".home-hero");
+  const image = document.querySelector("[data-tilt-image]");
+  if (!hero || !image || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  hero.addEventListener("pointermove", event => {
+    const bounds = hero.getBoundingClientRect();
+    const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+    const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+    image.style.setProperty("--image-tilt-x", `${(y * -7).toFixed(2)}deg`);
+    image.style.setProperty("--image-tilt-y", `${(x * 7).toFixed(2)}deg`);
+  });
+  hero.addEventListener("pointerleave", () => {
+    image.style.setProperty("--image-tilt-x", "0deg");
+    image.style.setProperty("--image-tilt-y", "0deg");
+  });
+}
+
+function wireContentImages() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  document.querySelectorAll(".portrait, .landscape-slot, .portrait-slot").forEach(frame => {
+    const image = frame.querySelector(".foreground-image");
+    if (!image) return;
+    frame.addEventListener("pointermove", event => {
+      const bounds = frame.getBoundingClientRect();
+      const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+      const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+      image.style.setProperty("--portrait-tilt-x", `${(y * -4).toFixed(2)}deg`);
+      image.style.setProperty("--portrait-tilt-y", `${(x * 4).toFixed(2)}deg`);
+    });
+    frame.addEventListener("pointerleave", () => {
+      image.style.setProperty("--portrait-tilt-x", "0deg");
+      image.style.setProperty("--portrait-tilt-y", "0deg");
+    });
+  });
+}
+
+function wireGreekBrowseImage() {
+  const frame = document.querySelector(".greek-browse-hero");
+  const image = frame?.querySelector(".greek-browse-image");
+  if (!frame || !image || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  frame.addEventListener("pointermove", event => {
+    const bounds = frame.getBoundingClientRect();
+    const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+    const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+    image.style.setProperty("--portrait-tilt-x", `${(y * -4).toFixed(2)}deg`);
+    image.style.setProperty("--portrait-tilt-y", `${(x * 4).toFixed(2)}deg`);
+  });
+  frame.addEventListener("pointerleave", () => {
+    image.style.setProperty("--portrait-tilt-x", "0deg");
+    image.style.setProperty("--portrait-tilt-y", "0deg");
   });
 }
 
@@ -428,7 +515,10 @@ async function renderRoute() {
     root.classList.remove("is-leaving");
     root.classList.add("is-entering");
     window.scrollTo({ top: 0, behavior: "smooth" });
+    if (parts.length === 0) wireHomeTilt();
     if (parts[0] === "browse") wireBrowse(params);
+    if (["character", "event", "topic"].includes(parts[0])) wireContentImages();
+    if (parts[0] === "browse") wireGreekBrowseImage();
     requestAnimationFrame(() => {
       if (gen === renderGen) root.classList.remove("is-entering");
     });

@@ -30,7 +30,8 @@
     }
   ],
   "characters_involved": ["odysseus", "athena"],
-  "image": "images/greek/the-odyssey.jpg",
+  "image_landscape": "",
+  "image_portrait": "",
   "sources": [
     "Homer, Odyssey",
     "Encyclopaedia Britannica — Odyssey"

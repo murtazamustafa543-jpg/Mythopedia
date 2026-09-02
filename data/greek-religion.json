@@ -10,31 +10,32 @@
     },
     {
       "title": "Temples and priesthood",
-      "description": "See the dedicated 'Temples and Sanctuaries' entry for how temples, priesthood, and sacred precincts actually functioned."
+      "description": "Temples served as the house of a god's cult statue rather than a congregational worship space — public rituals happened at outdoor altars nearby. Priesthood was usually a civic role rather than a full-time vocation: priests and priestesses were often prominent citizens elected or appointed for a term, responsible for maintaining a specific temple and overseeing its rites, not spiritual leaders of a wider community in the modern sense."
     },
     {
       "title": "Oracles and divination",
-      "description": "See the dedicated 'Oracles and Divination' entry, covering Delphi, Dodona, and other forms of Greek prophecy."
+      "description": "Greeks regularly sought divine guidance through oracles, the most famous being the Oracle of Delphi, where a priestess called the Pythia delivered prophecies believed to come from Apollo. City-states and individuals alike consulted oracles before major decisions, from wars to colonization efforts. Other forms of divination included interpreting the flight of birds, the entrails of sacrificed animals, and dreams."
     },
     {
       "title": "Festivals",
-      "description": "See the dedicated 'Religious Festivals' entry for the Panathenaea, the Eleusinian Mysteries, the City Dionysia, the Olympic Games, and the Thesmophoria."
+      "description": "Religious festivals structured much of the civic calendar. The Panathenaea honored Athena in Athens with athletic and musical competitions. The Eleusinian Mysteries, centered on Demeter and Persephone, were secretive initiation rites promising initiates a better fate in the afterlife. The original Olympic Games themselves began as a religious festival honoring Zeus at Olympia."
     },
     {
       "title": "Household and local worship",
-      "description": "Alongside the major Olympian cults, everyday religious life included household deities like Hestia (goddess of the hearth), local heroes worshipped as protective figures for a particular city or region, and minor nature spirits — see 'Minor Deities, Daimones & Mythical Creatures' for more on nymphs and similar beings."
+      "description": "Alongside the major Olympian cults, everyday religious life included household deities like Hestia (goddess of the hearth), local heroes worshipped as protective figures for a particular city or region, and countless minor nature spirits (nymphs, satyrs) tied to specific springs, groves, and mountains."
     },
     {
-      "title": "Mystery cults and the afterlife",
-      "description": "Mystery cults such as the Eleusinian Mysteries and Orphic traditions offered initiates hope of a better fate after death — see the dedicated 'Death and the Afterlife' entry for how this fit into broader Greek beliefs about the Underworld."
+      "title": "Mystery cults",
+      "description": "Alongside public civic worship, Greeks could seek out mystery cults — voluntary initiation rites promising initiates deeper religious knowledge and a better fate after death, kept deliberately secret from outsiders. The Eleusinian Mysteries, centered on Demeter and Persephone near Athens, were the most prestigious and long-running. Orphic mystery traditions, associated with the mythical poet Orpheus, offered their own initiation rites and a distinct set of beliefs about the soul's fate, and influenced later Pythagorean thought."
     },
     {
       "title": "Philosophy and religion",
-      "description": "See the dedicated 'Greek Philosophy and Religion' entry for Pythagoreanism, Orphism, Stoicism, and the late-antique Neoplatonist and theurgic traditions."
+      "description": "From the 6th century BCE onward, Greek thinkers increasingly treated religious questions philosophically as well as ritually — see the dedicated entry, 'Greek Philosophy and Religion,' for Pythagoreanism, Orphism, Stoicism, and the late-antique Neoplatonist and theurgic traditions."
     }
   ],
   "related_deities": ["zeus", "athena"],
-  "image": "images/greek/greek-religion.jpg",
+  "image_landscape": "",
+  "image_portrait": "",
   "sources": [
     "Bowden, Hugh (2010). Mystery Cults in the Ancient World. Thames and Hudson.",
     "Burkert, Walter (1987). Greek Religion: Archaic and Classical. Wiley-Blackwell.",

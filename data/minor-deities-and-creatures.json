@@ -26,7 +26,8 @@
     }
   ],
   "related_deities": ["dionysus", "hercules"],
-  "image": "images/greek/minor-deities-and-creatures.jpg",
+  "image_landscape": "",
+  "image_portrait": "",
   "sources": [
     "Hesiod, Theogony",
     "Apollodorus, Bibliotheca",

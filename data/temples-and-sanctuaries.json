@@ -26,7 +26,8 @@
     }
   ],
   "related_deities": ["zeus", "apollo"],
-  "image": "images/greek/temples-and-sanctuaries.jpg",
+  "image_landscape": "",
+  "image_portrait": "",
   "sources": [
     "Parker, Robert C.T. (2011). On Greek Religion. Cornell University Press.",
     "Eidinow, Esther & Julia Kindt (eds., 2017). The Oxford Handbook of Ancient Greek Religion. Oxford University Press.",
