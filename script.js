@@ -272,20 +272,41 @@ async function renderCharacter(id) {
   const sourcesHTML = (d.sources || []).map(s => `<li>${escapeHtml(s)}</li>`).join("");
   const achievementsHTML = (d.achievements || []).map(a => `<li>${escapeHtml(a)}</li>`).join("");
   const initial = (d.name || "?").charAt(0);
+
+  // Check for image path in JSON
+  const imageSrc = d.image || d.image_url;
+  const portraitHTML = imageSrc
+    ? `<img class="portrait-img" src="${escapeHtml(imageSrc)}" alt="${escapeHtml(d.name)}" />`
+    : `<span>${escapeHtml(initial)}</span>`;
+
+  const quoteHTML = d.signature_quote?.text
+  ? `<div class="quote-block">
+       <p>"${escapeHtml(d.signature_quote.text)}"</p>
+       ${d.signature_quote.note ? `<div class="quote-note">${escapeHtml(d.signature_quote.note)}</div>` : ""}
+     </div>`
+  : "";
+
+    
+    
+
+
   return `
     <div class="crumb"><a href="#/" data-nav>Home</a> / <a href="#/browse" data-nav>Greek</a> / <a href="#/browse?filter=${d.category}" data-nav>${categoryLabel(d.category)}</a> / ${escapeHtml(d.name)}</div>
     <div class="page">
       <div class="hero">
-        <div class="portrait"><span>${escapeHtml(initial)}</span></div>
+        <div class="portrait">${portraitHTML}</div>
         <div class="hero-text">
           <div class="domain-label">${categoryLabel(d.category)} — ${escapeHtml(d.domain_role || "")}</div>
           <h1 class="title">${escapeHtml(d.name)}</h1>
           ${altName}
           <div class="oxide-rule"></div>
           <p class="summary">${escapeHtml(d.summary)}</p>
+          <h3>Symbols</h3>
           <div class="symbols">${symbols}</div>
+          ${quoteHTML}
         </div>
       </div>
+         
       <div class="content">
         <aside class="sidebar">
           ${relationshipsHTML(d.relationships)}
@@ -295,11 +316,6 @@ async function renderCharacter(id) {
         <main class="main">
           <section><h2>Origin</h2><p>${escapeHtml(d.origin_story || "")}</p></section>
           ${achievementsHTML ? `<section><h2>Achievements</h2><ul class="achievements">${achievementsHTML}</ul></section>` : ""}
-          ${d.signature_quote ? `
-            <div class="quote-block">
-              <p>"${escapeHtml(d.signature_quote.text)}"</p>
-              <div class="quote-note">${escapeHtml(d.signature_quote.note || "")}</div>
-            </div>` : ""}
         </main>
       </div>
     </div>`;
