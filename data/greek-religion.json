@@ -1,0 +1,61 @@
+{
+  "id": "greek-religion",
+  "title": "Ancient Greek Religion",
+  "mythology": "Greek",
+  "summary": "Ancient Greek religion was a polytheistic system of worship centered on the Olympian gods and countless local deities, heroes, and spirits. Unlike modern organized religions, it had no single sacred text, founding prophet, or central authority — belief and practice varied by city-state, and religious life was woven directly into civic, domestic, and agricultural life rather than kept separate from it.",
+  "key_aspects": [
+    {
+      "title": "Worship and sacrifice",
+      "description": "Worship centered on maintaining good relations with the gods through prayer, votive offerings, and animal sacrifice performed at altars, usually located outside temples rather than inside them. A typical sacrifice involved burning the bones and fat for the gods while the meat was cooked and shared among worshippers — a practice that combined religious devotion with communal feasting."
+    },
+    {
+      "title": "Temples and priesthood",
+      "description": "See the dedicated 'Temples and Sanctuaries' entry for how temples, priesthood, and sacred precincts actually functioned."
+    },
+    {
+      "title": "Oracles and divination",
+      "description": "See the dedicated 'Oracles and Divination' entry, covering Delphi, Dodona, and other forms of Greek prophecy."
+    },
+    {
+      "title": "Festivals",
+      "description": "See the dedicated 'Religious Festivals' entry for the Panathenaea, the Eleusinian Mysteries, the City Dionysia, the Olympic Games, and the Thesmophoria."
+    },
+    {
+      "title": "Household and local worship",
+      "description": "Alongside the major Olympian cults, everyday religious life included household deities like Hestia (goddess of the hearth), local heroes worshipped as protective figures for a particular city or region, and minor nature spirits — see 'Minor Deities, Daimones & Mythical Creatures' for more on nymphs and similar beings."
+    },
+    {
+      "title": "Mystery cults and the afterlife",
+      "description": "Mystery cults such as the Eleusinian Mysteries and Orphic traditions offered initiates hope of a better fate after death — see the dedicated 'Death and the Afterlife' entry for how this fit into broader Greek beliefs about the Underworld."
+    },
+    {
+      "title": "Philosophy and religion",
+      "description": "See the dedicated 'Greek Philosophy and Religion' entry for Pythagoreanism, Orphism, Stoicism, and the late-antique Neoplatonist and theurgic traditions."
+    }
+  ],
+  "related_deities": ["zeus", "athena"],
+  "image": "images/greek/greek-religion.jpg",
+  "sources": [
+    "Bowden, Hugh (2010). Mystery Cults in the Ancient World. Thames and Hudson.",
+    "Burkert, Walter (1987). Greek Religion: Archaic and Classical. Wiley-Blackwell.",
+    "Burkert, Walter (1988). Ancient Mystery Cults. Harvard University Press.",
+    "Chlup, Radek (2016). Proclus: An Introduction. Cambridge University Press.",
+    "Cooper, John M. et al. (trans., 1997). Plato: Complete Works. Hackett Publishing.",
+    "Dodds, E.R. (2004). The Greeks and the Irrational. University of California Press.",
+    "Eidinow, Esther & Julia Kindt (eds., 2017). The Oxford Handbook of Ancient Greek Religion. Oxford University Press.",
+    "Gerson, Lloyd P. (ed., 2019). Plotinus: The Enneads. Cambridge University Press.",
+    "Gerson, Lloyd P. (2008). Cambridge Companion to Plotinus. Cambridge University Press.",
+    "Gregory, John (ed., 1998). The Neoplatonists: A Reader. Routledge.",
+    "Huffman, Carl A. (ed., 2017). A History of Pythagoreanism. Cambridge University Press.",
+    "Iamblichus. On the Mysteries (trans. Clarke, Dillon & Hershbell). Society of Biblical Literature.",
+    "Inwood, Brad (ed., 2003). The Cambridge Companion to the Stoics. Cambridge University Press.",
+    "Kirk, G.S., J.E. Raven & M. Schofield (1983). The Presocratic Philosophers, 2nd ed. Cambridge University Press.",
+    "Parker, Robert C.T. (2011). On Greek Religion. Cornell University Press.",
+    "Proclus. The Elements of Theology (trans. E.R. Dodds), 2nd ed. Oxford University Press.",
+    "Shaw, Gregory (2014). Theurgy and the Soul: The Neoplatonism of Iamblichus. Angelico Press/Sophia Perennis.",
+    "Ustinova, Yulia (2017). Divine Mania: Alterations of Consciousness in Ancient Greece. Routledge.",
+    "Wallis, R.T. (1998). Neoplatonism, 2nd ed. Hackett Publishing.",
+    "Zhmud, Leonid (2012). Pythagoras and the Early Pythagoreans (trans. Windle & Ireland). Oxford University Press.",
+    "Encyclopaedia Britannica — Greek religion"
+  ]
+}

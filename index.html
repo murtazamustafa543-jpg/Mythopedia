@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mythologica — A Greek Mythology Encyclopedia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="#/" data-nav>Mythologica <span>· Greek</span></a>
+  <div class="nav-links">
+    <a href="#/browse?filter=god" data-nav data-nav-filter="god">Gods</a>
+    <a href="#/browse?filter=hero" data-nav data-nav-filter="hero">Heroes</a>
+    <a href="#/browse?filter=event" data-nav data-nav-filter="event">Events</a>
+    <a href="#/browse?filter=religion" data-nav data-nav-filter="religion">Religion & Practice</a>
+  </div>
+  <button class="nav-search" type="button" id="search-toggle" aria-label="Open search">Search the encyclopedia…</button>
+</nav>
+
+<div id="view" class="view"></div>
+
+<div class="search-overlay" id="search-overlay" hidden>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="search-heading">
+    <div class="search-head">
+      <h2 id="search-heading">Search</h2>
+      <button type="button" class="search-close" id="search-close">Close</button>
+    </div>
+    <input class="search-field" id="search-field" type="search" placeholder="Gods, heroes, events, temples…" autocomplete="off">
+    <p class="search-hint">Type to filter all 23 Greek entries. Press Enter to open the first result, Esc to close.</p>
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+<div class="boot-error" id="boot-error" hidden></div>
+
+<script src="script.js"></script>
+</body>
+</html>

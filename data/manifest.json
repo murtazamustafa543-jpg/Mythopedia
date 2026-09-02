@@ -1,0 +1,165 @@
+{
+  "greek": [
+    {
+      "id": "aphrodite",
+      "title": "Aphrodite",
+      "type": "character",
+      "category": "god",
+      "summary": "Goddess of love, beauty, and desire. Her judgment-winning gift to Paris — the love of Helen — is the mythic spark that ignites the Trojan War."
+    },
+    {
+      "id": "apollo",
+      "title": "Apollo",
+      "type": "character",
+      "category": "god",
+      "summary": "God of prophecy, light, music, healing, and archery. Twin brother of Artemis, closely associated with the Oracle of Delphi and regarded as a patron of the arts and reason."
+    },
+    {
+      "id": "ares",
+      "title": "Ares",
+      "type": "character",
+      "category": "god",
+      "summary": "God of war in its violent, chaotic form — contrasted with Athena, who embodied war's strategic and disciplined side. Son of Zeus and Hera, generally unpopular among the other Olympians in myth despite his martial importance."
+    },
+    {
+      "id": "artemis",
+      "title": "Artemis",
+      "type": "character",
+      "category": "god",
+      "summary": "Goddess of the hunt, wilderness, and wild animals, and — somewhat paradoxically alongside her vow of eternal virginity — protector of young women and childbirth. Twin sister of Apollo."
+    },
+    {
+      "id": "athena",
+      "title": "Athena",
+      "type": "character",
+      "category": "god",
+      "summary": "Goddess of wisdom, strategic warfare, and crafts. Patron goddess of the city of Athens, born fully grown and armored from the head of Zeus."
+    },
+    {
+      "id": "death-and-afterlife",
+      "title": "Death and the Afterlife",
+      "type": "topic",
+      "category": "religion",
+      "summary": "Greek beliefs about death centered on the Underworld ruled by Hades, a shadowy realm most souls entered regardless of how they had lived — though mystery cults like the Eleusinian Mysteries and Orphism offered initiates hope of a better fate."
+    },
+    {
+      "id": "demeter",
+      "title": "Demeter",
+      "type": "character",
+      "category": "god",
+      "summary": "Goddess of the harvest, agriculture, and fertility of the earth. Mother of Persephone; her grief over her daughter's abduction by Hades is the mythic explanation for the changing seasons."
+    },
+    {
+      "id": "dionysus",
+      "title": "Dionysus",
+      "type": "character",
+      "category": "god",
+      "summary": "God of wine, festivity, theater, and ritual ecstasy. Known as 'twice-born' for surviving his mortal mother's death before birth, and as the only Olympian born to a mortal parent — a status that made his acceptance among the gods a recurring theme in his myths."
+    },
+    {
+      "id": "greek-festivals",
+      "title": "Religious Festivals",
+      "type": "topic",
+      "category": "religion",
+      "summary": "Religious festivals structured much of the Greek civic calendar, combining worship with athletic competition, theater, music, and communal feasting — public life and religious life were not treated as separate categories."
+    },
+    {
+      "id": "greek-philosophy-and-religion",
+      "title": "Greek Philosophy and Religion",
+      "type": "topic",
+      "category": "religion",
+      "summary": "From the 6th century BCE onward, Greek thinkers increasingly approached religious questions philosophically as well as ritually — reinterpreting the old myths allegorically, developing new doctrines about the soul, and, in late antiquity, blending philosophy with ritual practice itself. This entry was split out from the main Ancient Greek Religion page to give this material room to develop on its own."
+    },
+    {
+      "id": "greek-religion",
+      "title": "Ancient Greek Religion",
+      "type": "topic",
+      "category": "religion",
+      "summary": "Ancient Greek religion was a polytheistic system of worship centered on the Olympian gods and countless local deities, heroes, and spirits. Unlike modern organized religions, it had no single sacred text, founding prophet, or central authority — belief and practice varied by city-state, and religious life was woven directly into civic, domestic, and agricultural life rather than kept separate from it."
+    },
+    {
+      "id": "hellenic-culture-extent",
+      "title": "The Extent of Hellenic Culture",
+      "type": "topic",
+      "category": "religion",
+      "summary": "Greek religion, language, and culture spread far beyond the Greek mainland through centuries of colonization and, later, the conquests of Alexander the Great — reaching from the western Mediterranean to Central Asia and shaping, and being shaped by, the cultures it encountered."
+    },
+    {
+      "id": "hephaestus",
+      "title": "Hephaestus",
+      "type": "character",
+      "category": "god",
+      "summary": "God of fire, the forge, and craftsmanship. The master smith of Olympus, who forged weapons, armor, and marvels for both gods and mortal heroes, despite being lame and, in most versions, cast out by his own mother at birth."
+    },
+    {
+      "id": "hera",
+      "title": "Hera",
+      "type": "character",
+      "category": "god",
+      "summary": "Queen of the Olympian gods, goddess of marriage, women, and family. Wife and sister of Zeus, known for her fierce protection of the sanctity of marriage and her relentless pursuit of Zeus's mortal lovers and their children."
+    },
+    {
+      "id": "hermes",
+      "title": "Hermes",
+      "type": "character",
+      "category": "god",
+      "summary": "Messenger of the gods and guide of souls to the Underworld. God of travelers, commerce, boundaries, and — notably — thieves and trickery, reflecting his own famously cunning infancy."
+    },
+    {
+      "id": "minor-deities-and-creatures",
+      "title": "Minor Deities, Daimones & Mythical Creatures",
+      "type": "topic",
+      "category": "religion",
+      "summary": "Beyond the twelve Olympians, Greek religion and myth populated the world with countless lesser divine beings — nature spirits, personified forces, deified heroes, and monstrous creatures — that shaped everyday religious life and storytelling as much as the major gods did."
+    },
+    {
+      "id": "odysseus",
+      "title": "Odysseus",
+      "type": "character",
+      "category": "hero",
+      "summary": "King of Ithaca, renowned for his cunning intelligence rather than raw strength. Central figure of Homer's Iliad and Odyssey — devised the Trojan Horse and spent ten years journeying home after the war."
+    },
+    {
+      "id": "oracles-and-divination",
+      "title": "Oracles and Divination",
+      "type": "topic",
+      "category": "religion",
+      "summary": "Greeks regularly sought divine guidance through oracles and other forms of divination before major personal, political, and military decisions, treating prophecy as a genuine channel of communication with the gods rather than mere superstition on the margins of religion."
+    },
+    {
+      "id": "poseidon",
+      "title": "Poseidon",
+      "type": "character",
+      "category": "god",
+      "summary": "God of the sea, earthquakes, and horses. Brother of Zeus and Hades, ruler of the waters after the three divided the cosmos following the Titanomachy."
+    },
+    {
+      "id": "temples-and-sanctuaries",
+      "title": "Temples and Sanctuaries",
+      "type": "topic",
+      "category": "religion",
+      "summary": "Greek religious architecture centered on the sanctuary (temenos) — a sacred, boundary-marked precinct that could contain a temple, altars, treasuries, and other structures — rather than the temple building alone. Some sanctuaries grew into major pan-Hellenic sites drawing visitors from across the Greek world."
+    },
+    {
+      "id": "the-odyssey",
+      "title": "The Odyssey",
+      "type": "event",
+      "category": "event",
+      "summary": "Odysseus's ten-year journey home to Ithaca after the fall of Troy, filled with monsters, divine interference, and trials that test his cunning and endurance — the subject of Homer's epic poem of the same name."
+    },
+    {
+      "id": "trojan-war",
+      "title": "The Trojan War",
+      "type": "event",
+      "category": "event",
+      "summary": "A legendary ten-year siege of the city of Troy by a coalition of Greek kingdoms, sparked by the abduction of Helen, wife of the Spartan king Menelaus, by the Trojan prince Paris. The war is the central subject of Homer's Iliad and forms the backdrop for the Odyssey and much of later Greek heroic legend."
+    },
+    {
+      "id": "zeus",
+      "title": "Zeus",
+      "type": "character",
+      "category": "god",
+      "summary": "King of the Olympian gods and ruler of the sky, thunder, and law. Zeus presided over Mount Olympus and was regarded as the ultimate authority among gods and mortals alike."
+    }
+  ]
+}

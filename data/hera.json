@@ -1,0 +1,37 @@
+{
+  "id": "hera",
+  "name": "Hera",
+  "alt_names": ["Roman: Juno"],
+  "mythology": "Greek",
+  "category": "god",
+  "summary": "Queen of the Olympian gods, goddess of marriage, women, and family. Wife and sister of Zeus, known for her fierce protection of the sanctity of marriage and her relentless pursuit of Zeus's mortal lovers and their children.",
+  "domain_role": "Marriage, women, family, childbirth, queenship of the gods",
+  "image": "images/greek/hera.jpg",
+  "origin_story": "Hera was a daughter of the Titans Cronus and Rhea, and thus sister to Zeus, Poseidon, Hades, Demeter, and Hestia. After the Olympians' victory over the Titans, she became Zeus's wife and queen. Their courtship, in one version, began when Zeus transformed into a wounded cuckoo bird to win her sympathy.",
+  "achievements": [
+    "Served as the presiding deity over marriage and married women across the Greek world",
+    "Maintained major cult centers at Argos and Samos, among the oldest and most important in Greece",
+    "A central figure in the Judgment of Paris, one of the mythic causes of the Trojan War",
+    "Supported the Greeks during the Trojan War, in opposition to Aphrodite and the Trojans"
+  ],
+  "relationships": [
+    { "type": "parent", "target": "cronus" },
+    { "type": "parent", "target": "rhea" },
+    { "type": "sibling", "target": "zeus" },
+    { "type": "spouse", "target": "zeus" },
+    { "type": "child", "target": "ares" },
+    { "type": "child", "target": "hephaestus" },
+    { "type": "rival", "target": "hercules" }
+  ],
+  "symbols": ["Peacock", "Cow", "Pomegranate", "Diadem"],
+  "signature_quote": {
+    "text": "Hera is consistently portrayed in the Iliad as a determined advocate for the Greek cause, frequently clashing with Zeus over the war's course.",
+    "note": "Paraphrased rather than directly quoted, to avoid reproducing copyrighted translation text."
+  },
+  "related_events": ["trojan-war"],
+  "sources": [
+    "Hesiod, Theogony",
+    "Homer, Iliad",
+    "Encyclopaedia Britannica — Hera"
+  ]
+}

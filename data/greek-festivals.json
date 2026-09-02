@@ -1,0 +1,35 @@
+{
+  "id": "greek-festivals",
+  "title": "Religious Festivals",
+  "mythology": "Greek",
+  "summary": "Religious festivals structured much of the Greek civic calendar, combining worship with athletic competition, theater, music, and communal feasting — public life and religious life were not treated as separate categories.",
+  "key_aspects": [
+    {
+      "title": "The Panathenaea",
+      "description": "Athens's most important festival, held annually in honor of Athena, with a grander 'Great Panathenaea' held every four years. It featured athletic and musical competitions, and culminated in a procession that presented a newly woven robe (the peplos) to Athena's cult statue."
+    },
+    {
+      "title": "The Eleusinian Mysteries",
+      "description": "A secretive annual initiation festival honoring Demeter and Persephone, held at Eleusis near Athens. Initiates underwent rites kept deliberately secret from non-initiates, in exchange for a promise of a better fate in the afterlife — one of the most prestigious religious institutions in the Greek world, drawing initiates from across the Mediterranean."
+    },
+    {
+      "title": "The City Dionysia",
+      "description": "An Athenian festival honoring Dionysus, and the birthplace of Greek theatrical tragedy and comedy as art forms. Playwrights including Aeschylus, Sophocles, Euripides, and Aristophanes premiered their work in competitions held as part of this festival."
+    },
+    {
+      "title": "The Olympic Games",
+      "description": "Held every four years at Olympia in honor of Zeus, the Olympic Games began as a religious festival rather than a purely secular athletic event — competitions were themselves considered offerings to the god, and a sacred truce was declared across Greece for their duration."
+    },
+    {
+      "title": "The Thesmophoria",
+      "description": "A widely celebrated women-only festival honoring Demeter, tied to agricultural fertility, notable as one of the few major religious occasions in which men were entirely excluded."
+    }
+  ],
+  "related_deities": ["athena", "demeter", "dionysus", "zeus"],
+  "image": "images/greek/greek-festivals.jpg",
+  "sources": [
+    "Parker, Robert C.T. (2011). On Greek Religion. Cornell University Press.",
+    "Bowden, Hugh (2010). Mystery Cults in the Ancient World. Thames and Hudson.",
+    "Encyclopaedia Britannica — Panathenaea; Eleusinian Mysteries; Dionysia"
+  ]
+}

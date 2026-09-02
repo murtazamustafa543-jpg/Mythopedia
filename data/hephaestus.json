@@ -1,0 +1,32 @@
+{
+  "id": "hephaestus",
+  "name": "Hephaestus",
+  "alt_names": ["Roman: Vulcan"],
+  "mythology": "Greek",
+  "category": "god",
+  "summary": "God of fire, the forge, and craftsmanship. The master smith of Olympus, who forged weapons, armor, and marvels for both gods and mortal heroes, despite being lame and, in most versions, cast out by his own mother at birth.",
+  "domain_role": "Fire, blacksmithing, metalworking, craftsmanship, volcanoes",
+  "image": "images/greek/hephaestus.jpg",
+  "origin_story": "Accounts of Hephaestus's birth vary. In one version, Hera bore him alone, without Zeus, and threw him from Olympus in disgust at his lameness; in another, Zeus threw him from Olympus after Hephaestus took Hera's side in a quarrel. Either way, he was raised outside Olympus before eventually returning as its master craftsman.",
+  "achievements": [
+    "Forged the armor and shield of Achilles at his mother Thetis's request, described in detail in the Iliad",
+    "Built the palaces of the gods on Mount Olympus",
+    "Created Pandora, the first woman, at Zeus's command",
+    "Crafted numerous magical objects and weapons used by gods and heroes throughout Greek myth"
+  ],
+  "relationships": [
+    { "type": "parent", "target": "hera" },
+    { "type": "spouse", "target": "aphrodite" }
+  ],
+  "symbols": ["Hammer and anvil", "Tongs", "Forge fire"],
+  "signature_quote": {
+    "text": "The Iliad describes at length Hephaestus's forging of Achilles's new shield, depicting scenes of the wider cosmos and human life across its surface.",
+    "note": "Paraphrased summary rather than a direct translated quote, for copyright reasons."
+  },
+  "related_events": ["trojan-war"],
+  "sources": [
+    "Homer, Iliad",
+    "Hesiod, Theogony",
+    "Encyclopaedia Britannica — Hephaestus"
+  ]
+}

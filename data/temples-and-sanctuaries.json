@@ -1,0 +1,35 @@
+{
+  "id": "temples-and-sanctuaries",
+  "title": "Temples and Sanctuaries",
+  "mythology": "Greek",
+  "summary": "Greek religious architecture centered on the sanctuary (temenos) — a sacred, boundary-marked precinct that could contain a temple, altars, treasuries, and other structures — rather than the temple building alone. Some sanctuaries grew into major pan-Hellenic sites drawing visitors from across the Greek world.",
+  "key_aspects": [
+    {
+      "title": "The temple as the god's house",
+      "description": "A Greek temple's primary purpose was to house a cult statue of its god, not to gather worshippers for a congregational service. Public rituals and sacrifices took place at an altar outside the temple, in the open air, while the temple interior remained a comparatively restricted space."
+    },
+    {
+      "title": "The sacred precinct (temenos)",
+      "description": "A sanctuary's boundaries marked out land set apart for a god, within which certain ordinary activities and laws could be suspended. Sanctuaries often held treasuries built by different city-states to store dedicated offerings, alongside altars, statues, and sometimes theaters or athletic facilities."
+    },
+    {
+      "title": "Major pan-Hellenic sites",
+      "description": "Some sanctuaries transcended their local city-state to become sites of pan-Hellenic importance: Olympia (Zeus, home of the Olympic Games), Delphi (Apollo, home of the famous Oracle), Epidaurus (Asclepius, a major healing sanctuary), and Eleusis (Demeter and Persephone, home of the Eleusinian Mysteries)."
+    },
+    {
+      "title": "Sanctuary and asylum",
+      "description": "Sanctuaries could function as places of asylum — a fugitive or suppliant who reached sacred ground was, in principle, protected from violence, since violating that protection risked offending the resident god. This right was taken seriously enough to shape political and military conduct in several recorded episodes."
+    },
+    {
+      "title": "Votive offerings",
+      "description": "Worshippers left votive offerings at sanctuaries — anything from small terracotta figurines to elaborate statues and treasuries — as thanks for a god's favor or in hope of future help. Archaeological finds at sites like Olympia and Delphi provide much of what is known about everyday Greek religious practice."
+    }
+  ],
+  "related_deities": ["zeus", "apollo"],
+  "image": "images/greek/temples-and-sanctuaries.jpg",
+  "sources": [
+    "Parker, Robert C.T. (2011). On Greek Religion. Cornell University Press.",
+    "Eidinow, Esther & Julia Kindt (eds., 2017). The Oxford Handbook of Ancient Greek Religion. Oxford University Press.",
+    "Encyclopaedia Britannica — Greek temple"
+  ]
+}

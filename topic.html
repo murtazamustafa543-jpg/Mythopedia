@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Redirecting…</title>
+<script>
+  const id = new URLSearchParams(location.search).get("id") || "";
+  location.replace("index.html#/topic/" + encodeURIComponent(id));
+</script>
+</head>
+<body>
+<p>Moved to the topic page.</p>
+</body>
+</html>

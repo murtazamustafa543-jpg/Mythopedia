@@ -1,0 +1,35 @@
+{
+  "id": "trojan-war",
+  "title": "The Trojan War",
+  "mythology": "Greek",
+  "summary": "A legendary ten-year siege of the city of Troy by a coalition of Greek kingdoms, sparked by the abduction of Helen, wife of the Spartan king Menelaus, by the Trojan prince Paris. The war is the central subject of Homer's Iliad and forms the backdrop for the Odyssey and much of later Greek heroic legend.",
+  "phases": [
+    {
+      "title": "The Judgment of Paris and the abduction of Helen",
+      "description": "The war's mythic origin traces to a beauty contest among three goddesses, judged by the Trojan prince Paris, who chose Aphrodite after she promised him the world's most beautiful woman — Helen, already married to Menelaus of Sparta."
+    },
+    {
+      "title": "The Greek coalition gathers",
+      "description": "Menelaus's brother, Agamemnon, assembled a coalition of Greek kings and warriors — including Achilles, Odysseus, and Ajax — bound by an earlier oath to defend Helen's marriage, and sailed for Troy."
+    },
+    {
+      "title": "Nine years of siege",
+      "description": "The war ground on for years without a decisive breakthrough, marked by individual duels, raids on nearby settlements, and shifting fortunes on both sides."
+    },
+    {
+      "title": "The Wrath of Achilles",
+      "description": "The central events of the Iliad: a dispute between Agamemnon and Achilles over a captive leads Achilles to withdraw from battle, with severe consequences for the Greek war effort — including the death of his close companion Patroclus, which draws Achilles back into the fighting to kill the Trojan hero Hector."
+    },
+    {
+      "title": "The Trojan Horse and the fall of Troy",
+      "description": "Unable to breach Troy's walls by force, the Greeks — on Odysseus's plan — built a massive wooden horse, hid warriors inside, and pretended to sail away. The Trojans brought the horse inside their walls; the hidden Greeks emerged at night and opened the gates, and the city was destroyed."
+    }
+  ],
+  "characters_involved": ["zeus", "athena", "odysseus"],
+  "image": "images/greek/trojan-war.jpg",
+  "sources": [
+    "Homer, Iliad",
+    "Virgil, Aeneid (for the Trojan Horse episode)",
+    "Encyclopaedia Britannica — Trojan War"
+  ]
+}

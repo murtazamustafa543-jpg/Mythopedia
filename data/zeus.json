@@ -1,0 +1,38 @@
+{
+  "id": "zeus",
+  "name": "Zeus",
+  "alt_names": ["Jove (Roman: Jupiter)"],
+  "mythology": "Greek",
+  "category": "god",
+  "summary": "King of the Olympian gods and ruler of the sky, thunder, and law. Zeus presided over Mount Olympus and was regarded as the ultimate authority among gods and mortals alike.",
+  "domain_role": "Sky, thunder, law, order, kingship of the gods",
+  "image": "images/greek/zeus.jpg",
+  "origin_story": "Zeus was the youngest son of the Titans Cronus and Rhea. Fearing a prophecy that one of his children would overthrow him, Cronus swallowed each of his children at birth. Rhea hid Zeus at birth, giving Cronus a stone wrapped in cloth to swallow instead. Raised in secret on the island of Crete, Zeus grew to maturity, forced his father to disgorge his swallowed siblings, and led them in the decade-long war against the Titans, known as the Titanomachy. Victorious, Zeus and his brothers divided rule of the cosmos: Zeus took the sky, Poseidon the sea, and Hades the underworld.",
+  "achievements": [
+    "Led the Olympians to victory over the Titans in the Titanomachy",
+    "Established the reign of the Olympian gods and became their king",
+    "Fathered many major gods and heroes, including Athena, Apollo, Artemis, and Hercules",
+    "Served as the enforcer of oaths, hospitality, and justice among gods and mortals"
+  ],
+  "relationships": [
+    { "type": "parent", "target": "cronus" },
+    { "type": "parent", "target": "rhea" },
+    { "type": "sibling", "target": "poseidon" },
+    { "type": "sibling", "target": "hades" },
+    { "type": "sibling", "target": "hera" },
+    { "type": "spouse", "target": "hera" },
+    { "type": "child", "target": "athena" },
+    { "type": "child", "target": "hercules" }
+  ],
+  "symbols": ["Thunderbolt", "Eagle", "Oak tree"],
+  "signature_quote": {
+    "text": "In Homer's Iliad, Zeus is repeatedly described as the one whose will ultimately prevails over gods and mortals alike.",
+    "note": "Paraphrased description rather than a direct translated quote, to avoid reproducing copyrighted translation text. If you want an exact quoted line later, we should pull it from a specific public-domain translation (e.g. the 1898 Samuel Butler translation) and cite it precisely."
+  },
+  "related_events": ["trojan-war"],
+  "sources": [
+    "Hesiod, Theogony",
+    "Homer, Iliad",
+    "Encyclopaedia Britannica — Zeus"
+  ]
+}

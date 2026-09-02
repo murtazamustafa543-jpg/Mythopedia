@@ -1,0 +1,36 @@
+{
+  "id": "poseidon",
+  "name": "Poseidon",
+  "alt_names": ["Roman: Neptune"],
+  "mythology": "Greek",
+  "category": "god",
+  "summary": "God of the sea, earthquakes, and horses. Brother of Zeus and Hades, ruler of the waters after the three divided the cosmos following the Titanomachy.",
+  "domain_role": "The sea, earthquakes, horses, storms",
+  "image": "images/greek/poseidon.jpg",
+  "origin_story": "Like his siblings, Poseidon was swallowed at birth by his father Cronus and later freed when Zeus forced Cronus to disgorge his children. After the Olympians' victory over the Titans, the three brothers — Zeus, Poseidon, and Hades — drew lots for dominion over the cosmos; Poseidon received the sea.",
+  "achievements": [
+    "Ruled and controlled the seas, able to calm or violently stir storms",
+    "Contested with Athena for patronage of Athens, striking the Acropolis to produce a saltwater spring, but lost to her gift of the olive tree",
+    "Fathered numerous offspring, including the Cyclops Polyphemus",
+    "Caused the storms and delays that plagued Odysseus's journey home after his son Polyphemus was blinded"
+  ],
+  "relationships": [
+    { "type": "parent", "target": "cronus" },
+    { "type": "parent", "target": "rhea" },
+    { "type": "sibling", "target": "zeus" },
+    { "type": "sibling", "target": "hades" },
+    { "type": "rival", "target": "athena" },
+    { "type": "rival", "target": "odysseus" }
+  ],
+  "symbols": ["Trident", "Horse", "Dolphin"],
+  "signature_quote": {
+    "text": "Poseidon's wrath toward Odysseus, provoked by the blinding of his son Polyphemus, is presented in the Odyssey as the primary force delaying Odysseus's return home.",
+    "note": "Paraphrased description rather than a direct translated quote, for copyright reasons."
+  },
+  "related_events": ["the-odyssey"],
+  "sources": [
+    "Hesiod, Theogony",
+    "Homer, Odyssey",
+    "Encyclopaedia Britannica — Poseidon"
+  ]
+}

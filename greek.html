@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0;url=index.html#/browse">
+<script>
+  const p = new URLSearchParams(location.search);
+  const next = new URLSearchParams();
+  if (p.get("filter")) next.set("filter", p.get("filter"));
+  if (p.get("q")) next.set("q", p.get("q"));
+  const qs = next.toString();
+  location.replace("index.html#/browse" + (qs ? "?" + qs : ""));
+</script>
+<title>Redirecting…</title>
+</head>
+<body>
+<p>Moved to <a href="index.html#/browse">the collection</a>.</p>
+</body>
+</html>

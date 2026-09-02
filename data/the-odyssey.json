@@ -1,0 +1,38 @@
+{
+  "id": "the-odyssey",
+  "title": "The Odyssey",
+  "mythology": "Greek",
+  "summary": "Odysseus's ten-year journey home to Ithaca after the fall of Troy, filled with monsters, divine interference, and trials that test his cunning and endurance — the subject of Homer's epic poem of the same name.",
+  "phases": [
+    {
+      "title": "Departure from Troy and the Cicones",
+      "description": "Odysseus and his men leave Troy but are blown off course after raiding the land of the Cicones, the first sign that the journey home will not go smoothly."
+    },
+    {
+      "title": "The Lotus-Eaters",
+      "description": "The crew lands among a people who eat the narcotic lotus plant; some sailors who eat it lose all desire to return home and must be forced back to the ships."
+    },
+    {
+      "title": "The Cyclops Polyphemus",
+      "description": "Trapped in the cave of the one-eyed giant Polyphemus, son of Poseidon, Odysseus blinds him to escape — but boasting his real name afterward earns him Poseidon's lasting wrath, which drives much of the suffering that follows."
+    },
+    {
+      "title": "Circe and the descent to the Underworld",
+      "description": "The sorceress Circe turns part of Odysseus's crew into pigs before becoming an ally; she later directs him to the Underworld to consult the prophet Tiresias about how to get home."
+    },
+    {
+      "title": "The Sirens, Scylla, and Charybdis",
+      "description": "Odysseus navigates past the Sirens' deadly song by having his crew plug their ears while he alone listens, bound to the mast, then threads the strait between the monster Scylla and the whirlpool Charybdis."
+    },
+    {
+      "title": "Return to Ithaca and reclaiming his throne",
+      "description": "Arriving home after twenty years away, Odysseus finds his palace overrun by suitors pressuring his wife Penelope to remarry. Disguised as a beggar, he reveals himself, defeats the suitors, and reunites with Penelope and his son Telemachus."
+    }
+  ],
+  "characters_involved": ["odysseus", "athena"],
+  "image": "images/greek/the-odyssey.jpg",
+  "sources": [
+    "Homer, Odyssey",
+    "Encyclopaedia Britannica — Odyssey"
+  ]
+}

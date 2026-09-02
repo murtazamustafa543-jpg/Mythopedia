@@ -1,0 +1,33 @@
+{
+  "id": "odysseus",
+  "name": "Odysseus",
+  "alt_names": ["Ulysses (Roman name)"],
+  "mythology": "Greek",
+  "category": "hero",
+  "summary": "King of Ithaca, renowned for his cunning intelligence rather than raw strength. Central figure of Homer's Iliad and Odyssey — devised the Trojan Horse and spent ten years journeying home after the war.",
+  "domain_role": "Cunning, strategy, leadership — the archetypal 'clever hero'",
+  "image": "images/greek/odysseus.jpg",
+  "origin_story": "Odysseus was king of the island of Ithaca, married to Penelope, with a son, Telemachus. Reluctant to join the Trojan War (some versions say he feigned madness to avoid the draft), he was eventually compelled to go and became one of the Greeks' most valuable strategists, credited with devising the Trojan Horse that led to Troy's fall.",
+  "achievements": [
+    "Devised the Trojan Horse strategy that ended the ten-year siege of Troy",
+    "Survived a ten-year journey home, encountering the Cyclops Polyphemus, the sorceress Circe, and the Sirens",
+    "Descended to the Underworld to consult the prophet Tiresias",
+    "Reclaimed his kingdom and reunited with his wife Penelope after twenty years away"
+  ],
+  "relationships": [
+    { "type": "spouse", "target": "penelope" },
+    { "type": "child", "target": "telemachus" },
+    { "type": "ally", "target": "athena" }
+  ],
+  "symbols": ["Bow (his own, which only he could string)", "Trojan Horse"],
+  "signature_quote": {
+    "text": "Odysseus is repeatedly described in the Odyssey by the epithet 'of many wiles' or 'man of twists and turns,' reflecting his defining trait of cunning.",
+    "note": "Paraphrased description of a well-known Homeric epithet, rather than quoting a specific translator's exact wording, for copyright reasons."
+  },
+  "related_events": ["trojan-war", "the-odyssey"],
+  "sources": [
+    "Homer, Iliad",
+    "Homer, Odyssey",
+    "Encyclopaedia Britannica — Odysseus"
+  ]
+}

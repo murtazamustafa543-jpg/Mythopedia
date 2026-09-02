@@ -1,0 +1,35 @@
+{
+  "id": "oracles-and-divination",
+  "title": "Oracles and Divination",
+  "mythology": "Greek",
+  "summary": "Greeks regularly sought divine guidance through oracles and other forms of divination before major personal, political, and military decisions, treating prophecy as a genuine channel of communication with the gods rather than mere superstition on the margins of religion.",
+  "key_aspects": [
+    {
+      "title": "The Oracle of Delphi",
+      "description": "The most famous oracle in the Greek world, sacred to Apollo. A priestess called the Pythia, seated on a tripod inside the temple, delivered prophecies in an altered state believed to be induced by the god, which priests then interpreted — often deliberately ambiguous — for the many individuals and city-states who consulted it before wars, colonization efforts, and other major decisions."
+    },
+    {
+      "title": "The Oracle of Dodona",
+      "description": "An older oracle sacred to Zeus, located in northwestern Greece, where priests interpreted the rustling of leaves in a sacred oak tree as divine messages — considered one of the oldest oracular sites in the Greek world."
+    },
+    {
+      "title": "The Oracle of Trophonius",
+      "description": "A less well-known but notably intense oracle at Lebadeia, where consultants descended into an underground chamber to receive prophecy directly, an experience ancient sources describe as physically and psychologically overwhelming."
+    },
+    {
+      "title": "Other forms of divination",
+      "description": "Beyond formal oracles, Greeks practiced divination through augury (interpreting the flight and calls of birds), haruspicy (examining the entrails of sacrificed animals), and the interpretation of dreams and unusual natural events (omens) as signs of divine will."
+    },
+    {
+      "title": "Political and military role",
+      "description": "Oracular consultation was not a private or marginal matter — city-states regularly sent official delegations to Delphi before founding colonies, declaring wars, or making major policy decisions, treating the god's response as carrying real, binding weight in public affairs."
+    }
+  ],
+  "related_deities": ["apollo", "zeus"],
+  "image": "images/greek/oracles-and-divination.jpg",
+  "sources": [
+    "Ustinova, Yulia (2017). Divine Mania: Alterations of Consciousness in Ancient Greece. Routledge.",
+    "Parker, Robert C.T. (2011). On Greek Religion. Cornell University Press.",
+    "Encyclopaedia Britannica — Delphic oracle"
+  ]
+}

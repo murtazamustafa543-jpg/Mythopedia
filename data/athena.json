@@ -1,0 +1,34 @@
+{
+  "id": "athena",
+  "name": "Athena",
+  "alt_names": ["Pallas Athena (Roman: Minerva)"],
+  "mythology": "Greek",
+  "category": "god",
+  "summary": "Goddess of wisdom, strategic warfare, and crafts. Patron goddess of the city of Athens, born fully grown and armored from the head of Zeus.",
+  "domain_role": "Wisdom, strategic warfare, crafts, weaving, civic order",
+  "image": "images/greek/athena.jpg",
+  "origin_story": "Zeus swallowed his first wife, the Titaness Metis, after a prophecy warned that her children would be wiser and stronger than their father. Some time later, Zeus suffered a tremendous headache; Hephaestus (or in some versions Prometheus) split his skull open, and Athena emerged fully grown, fully armored, and already wise. Unlike most Olympians, she had no conventional childhood.",
+  "achievements": [
+    "Won patronage of Athens over Poseidon by gifting the city the olive tree",
+    "Guided and protected numerous heroes, including Odysseus and Perseus",
+    "Credited with inventing or perfecting weaving, pottery, and other crafts",
+    "Fought on the side of the Greeks during the Trojan War"
+  ],
+  "relationships": [
+    { "type": "parent", "target": "zeus" },
+    { "type": "parent", "target": "metis" },
+    { "type": "sibling", "target": "ares" },
+    { "type": "ally", "target": "odysseus" }
+  ],
+  "symbols": ["Owl", "Olive tree", "Aegis (shield)", "Spear"],
+  "signature_quote": {
+    "text": "Athena is consistently portrayed across the Odyssey as Odysseus's protector, intervening on his behalf at key moments of his journey.",
+    "note": "Paraphrased rather than directly quoted, for the same copyright reasons noted on Zeus's entry."
+  },
+  "related_events": ["trojan-war", "the-odyssey"],
+  "sources": [
+    "Hesiod, Theogony",
+    "Homer, Odyssey",
+    "Encyclopaedia Britannica — Athena"
+  ]
+}

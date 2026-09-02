@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Redirecting…</title>
+<script>
+  const id = new URLSearchParams(location.search).get("id") || "";
+  location.replace("index.html#/character/" + encodeURIComponent(id));
+</script>
+</head>
+<body>
+<p>Moved to the character page.</p>
+</body>
+</html>
