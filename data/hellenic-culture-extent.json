@@ -2,15 +2,15 @@
   "id": "hellenic-culture-extent",
   "title": "The Extent of Hellenic Culture",
   "mythology": "Greek",
-  "summary": "Greek religion, language, and culture spread far beyond the Greek mainland through centuries of colonization and, later, the conquests of Alexander the Great — reaching from the western Mediterranean to Central Asia and shaping, and being shaped by, the cultures it encountered.",
+  "summary": "Greek religion, language, and culture spread far beyond the Greek mainland through centuries of colonization and, later, the conquests of Alexander the Great. It reached from the western Mediterranean to Central Asia and shaped, and was shaped by, the cultures it encountered.",
   "key_aspects": [
     {
       "title": "Archaic-era colonization",
-      "description": "Beginning around the 8th century BCE, Greek city-states founded colonies across the Mediterranean and Black Sea coasts — Magna Graecia in southern Italy and Sicily, settlements along Ionia (western Asia Minor), and outposts on the Black Sea coast — carrying Greek religious practice, temple architecture, and civic institutions with them."
+      "description": "Beginning around the 8th century BCE, Greek city-states founded colonies across the Mediterranean and Black Sea coasts. These included Magna Graecia in southern Italy and Sicily, settlements along Ionia (western Asia Minor), and outposts on the Black Sea coast. The colonies carried Greek religious practice, temple architecture, and civic institutions with them."
     },
     {
       "title": "Alexander the Great and the Hellenistic period",
-      "description": "Alexander's conquests in the 4th century BCE (334–323 BCE) rapidly extended Greek political control — and with it, Greek language and culture — from Egypt through the former Persian Empire into Central Asia and northwestern India, inaugurating what historians call the Hellenistic period."
+      "description": "Alexander's conquests in the 4th century BCE (334–323 BCE) rapidly extended Greek political control from Egypt through the former Persian Empire into Central Asia and northwestern India. Greek language and culture spread with this expansion, inaugurating what historians call the Hellenistic period."
     },
     {
       "title": "Hellenistic kingdoms",
@@ -18,18 +18,18 @@
     },
     {
       "title": "Koine Greek and cultural exchange",
-      "description": "A common form of Greek, Koine, became a lingua franca across the Hellenistic world, used in administration, trade, and scholarship far beyond Greece itself. Cultural exchange ran in both directions — Greek art and religious iconography absorbed influences from Egyptian, Persian, and Central Asian traditions, producing distinctive hybrid styles, such as Greco-Buddhist art in the region of ancient Gandhara."
+      "description": "A common form of Greek, Koine, became a lingua franca across the Hellenistic world, used in administration, trade, and scholarship far beyond Greece itself. Cultural exchange ran in both directions. Greek art and religious iconography absorbed influences from Egyptian, Persian, and Central Asian traditions, producing distinctive hybrid styles such as Greco-Buddhist art in the region of ancient Gandhara."
     },
     {
       "title": "Roman adoption of Greek religion and culture",
-      "description": "As Rome's power grew and eventually absorbed the Hellenistic kingdoms, Roman religion and culture extensively adopted and adapted Greek gods, myths, and artistic conventions — most Olympian gods gained direct Roman equivalents (Zeus/Jupiter, Aphrodite/Venus, and so on), and Greek literature and philosophy became central to elite Roman education."
+      "description": "As Rome's power grew and eventually absorbed the Hellenistic kingdoms, Roman religion and culture extensively adopted and adapted Greek gods, myths, and artistic conventions. Most Olympian gods gained direct Roman equivalents, such as Zeus and Jupiter or Aphrodite and Venus. Greek literature and philosophy became central to elite Roman education."
     }
   ],
   "related_deities": ["zeus", "dionysus"],
-  "image_landscape": "",
-  "image_portrait": "",
+  "image_landscape": "images/greek/hellenic-culture-extent1.jpg",
+  "image_portrait": "images/greek/hellenic-culture-extent2.jpg",
   "sources": [
-    "Encyclopaedia Britannica — Hellenistic Age",
-    "Encyclopaedia Britannica — Greek colonization"
+    "Encyclopaedia Britannica, Hellenistic Age",
+    "Encyclopaedia Britannica, Greek colonization"
   ]
 }

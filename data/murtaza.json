@@ -1,0 +1,35 @@
+{
+  "id": "murtaza",
+  "name": "Murtaza",
+  "alt_names": ["The Unbothered One", "He Who Ships Anyway", "Slayer of the 2am Bug"],
+  "mythology": "Greek (unofficial easter egg entry, not part of the real site content)",
+  "category": "hero",
+  "summary": "A mortal hero of legendary stubbornness who undertakes a series of increasingly ridiculous trials. The greatest of these is building an entire mythology encyclopedia from scratch. Not divine, but occasionally mistaken for it after a good deploy.",
+  "domain_role": "Persistence, sarcasm, unreasonable amounts of late-night productivity",
+  "image": "images/greek/murtaza.jpg",
+  "origin_story": "Unlike Hercules, no god fathered this hero. He was an ordinary mortal who decided, at 2am and fueled by coffee and stubbornness, to build a mythology encyclopedia website from nothing. What followed was a series of trials no less grueling than the Twelve Labors, if considerably lower stakes.",
+  "achievements": [
+    "Fought valiantly against the evil forces of Harsh Mysteriousness (also known as: cryptic error messages with no line numbers)",
+    "Vanquished the Redeemer of Bad WiFi mid-deployment",
+    "Successfully argued with an AI assistant about nav bar padding and won",
+    "Built an entire encyclopedia of twelve Olympians before finishing the coffee that started it",
+    "Survived several rounds of academic combat against formidable rivals (see below) and lived to tell the tale"
+  ],
+  "relationships": [
+    { "type": "rival", "target": "monday-mornings" },
+    { "type": "rival", "target": "sir shams" },
+    { "type": "rival", "target": "arshad islam" },
+    { "type": "rival", "target": "gpa" },
+    { "type": "ally", "target": "the-undo-button" }
+  ],
+  "symbols": ["An open laptop at 2am", "An empty coffee cup", "A browser with 47 tabs open"],
+  "signature_quote": {
+    "text": "\"It works on my machine.\"",
+    "note": "Disputed attribution. Some scholars believe this phrase predates recorded history."
+  },
+  "related_events": [],
+  "sources": [
+    "Personal testimony",
+    "This very conversation"
+  ]
+}

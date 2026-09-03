@@ -2,15 +2,15 @@
   "id": "greek-religion",
   "title": "Ancient Greek Religion",
   "mythology": "Greek",
-  "summary": "Ancient Greek religion was a polytheistic system of worship centered on the Olympian gods and countless local deities, heroes, and spirits. Unlike modern organized religions, it had no single sacred text, founding prophet, or central authority — belief and practice varied by city-state, and religious life was woven directly into civic, domestic, and agricultural life rather than kept separate from it.",
+  "summary": "Ancient Greek religion was a polytheistic system of worship centered on the Olympian gods and countless local deities, heroes, and spirits. Unlike modern organized religions, it had no single sacred text, founding prophet, or central authority. Belief and practice varied by city-state, and religious life was woven directly into civic, domestic, and agricultural life rather than kept separate from it.",
   "key_aspects": [
     {
       "title": "Worship and sacrifice",
-      "description": "Worship centered on maintaining good relations with the gods through prayer, votive offerings, and animal sacrifice performed at altars, usually located outside temples rather than inside them. A typical sacrifice involved burning the bones and fat for the gods while the meat was cooked and shared among worshippers — a practice that combined religious devotion with communal feasting."
+      "description": "Worship centered on maintaining good relations with the gods through prayer, votive offerings, and animal sacrifice performed at altars, usually located outside temples rather than inside them. A typical sacrifice involved burning the bones and fat for the gods while the meat was cooked and shared among worshippers. This practice combined religious devotion with communal feasting."
     },
     {
       "title": "Temples and priesthood",
-      "description": "Temples served as the house of a god's cult statue rather than a congregational worship space — public rituals happened at outdoor altars nearby. Priesthood was usually a civic role rather than a full-time vocation: priests and priestesses were often prominent citizens elected or appointed for a term, responsible for maintaining a specific temple and overseeing its rites, not spiritual leaders of a wider community in the modern sense."
+      "description": "Temples served as the house of a god's cult statue rather than a congregational worship space. Public rituals happened at outdoor altars nearby. Priesthood was usually a civic role rather than a full-time vocation. Priests and priestesses were often prominent citizens elected or appointed for a term, responsible for maintaining a specific temple and overseeing its rites, not spiritual leaders of a wider community in the modern sense."
     },
     {
       "title": "Oracles and divination",
@@ -26,16 +26,16 @@
     },
     {
       "title": "Mystery cults",
-      "description": "Alongside public civic worship, Greeks could seek out mystery cults — voluntary initiation rites promising initiates deeper religious knowledge and a better fate after death, kept deliberately secret from outsiders. The Eleusinian Mysteries, centered on Demeter and Persephone near Athens, were the most prestigious and long-running. Orphic mystery traditions, associated with the mythical poet Orpheus, offered their own initiation rites and a distinct set of beliefs about the soul's fate, and influenced later Pythagorean thought."
+      "description": "Alongside public civic worship, Greeks could seek out mystery cults, voluntary initiation rites promising initiates deeper religious knowledge and a better fate after death, kept deliberately secret from outsiders. The Eleusinian Mysteries, centered on Demeter and Persephone near Athens, were the most prestigious and long-running. Orphic mystery traditions, associated with the mythical poet Orpheus, offered their own initiation rites and a distinct set of beliefs about the soul's fate, and influenced later Pythagorean thought."
     },
     {
       "title": "Philosophy and religion",
-      "description": "From the 6th century BCE onward, Greek thinkers increasingly treated religious questions philosophically as well as ritually — see the dedicated entry, 'Greek Philosophy and Religion,' for Pythagoreanism, Orphism, Stoicism, and the late-antique Neoplatonist and theurgic traditions."
+      "description": "From the 6th century BCE onward, Greek thinkers increasingly treated religious questions philosophically as well as ritually. See the dedicated entry, 'Greek Philosophy and Religion,' for Pythagoreanism, Orphism, Stoicism, and the late-antique Neoplatonist and theurgic traditions."
     }
   ],
   "related_deities": ["zeus", "athena"],
-  "image_landscape": "",
-  "image_portrait": "",
+  "image_landscape": "images/greek/greek-religion1.jpg",
+  "image_portrait": "images/greek/greek-religion2.jpg",
   "sources": [
     "Bowden, Hugh (2010). Mystery Cults in the Ancient World. Thames and Hudson.",
     "Burkert, Walter (1987). Greek Religion: Archaic and Classical. Wiley-Blackwell.",
@@ -57,6 +57,6 @@
     "Ustinova, Yulia (2017). Divine Mania: Alterations of Consciousness in Ancient Greece. Routledge.",
     "Wallis, R.T. (1998). Neoplatonism, 2nd ed. Hackett Publishing.",
     "Zhmud, Leonid (2012). Pythagoras and the Early Pythagoreans (trans. Windle & Ireland). Oxford University Press.",
-    "Encyclopaedia Britannica — Greek religion"
+    "Encyclopaedia Britannica, Greek religion"
   ]
 }

@@ -2,15 +2,15 @@
   "id": "death-and-afterlife",
   "title": "Death and the Afterlife",
   "mythology": "Greek",
-  "summary": "Greek beliefs about death centered on the Underworld ruled by Hades, a shadowy realm most souls entered regardless of how they had lived — though mystery cults like the Eleusinian Mysteries and Orphism offered initiates hope of a better fate.",
+  "summary": "Greek beliefs about death centered on the Underworld ruled by Hades, a shadowy realm most souls entered regardless of how they had lived, though mystery cults like the Eleusinian Mysteries and Orphism offered initiates hope of a better fate.",
   "key_aspects": [
     {
       "title": "The soul (psyche) and the journey to the Underworld",
-      "description": "At death, the soul (psyche) was believed to depart the body and travel to the Underworld, often guided by Hermes in his role as psychopomp. Proper burial rites were considered essential — an unburied or improperly buried soul was believed to wander, unable to cross into the Underworld properly, a fear reflected in numerous myths and tragedies."
+      "description": "At death, the soul (psyche) was believed to depart the body and travel to the Underworld, often guided by Hermes in his role as psychopomp. Proper burial rites were considered essential. An unburied or improperly buried soul was believed to wander, unable to cross into the Underworld properly, a fear reflected in numerous myths and tragedies."
     },
     {
       "title": "Crossing into the Underworld",
-      "description": "The dead were traditionally believed to cross the river Styx (or Acheron) with the ferryman Charon, who required payment — an obol, a small coin, was often placed in or on the mouth of the deceased at burial for this purpose. Cerberus, the three-headed dog, guarded the entrance to prevent souls from leaving once they had entered."
+      "description": "The dead were traditionally believed to cross the river Styx (or Acheron) with the ferryman Charon, who required payment. An obol, a small coin, was often placed in or on the mouth of the deceased at burial for this purpose. Cerberus, the three-headed dog, guarded the entrance to prevent souls from leaving once they had entered."
     },
     {
       "title": "Regions of the Underworld",
@@ -18,20 +18,20 @@
     },
     {
       "title": "Mystery cults and hope for a better afterlife",
-      "description": "Ordinary Olympian religion offered little assurance of a favorable afterlife regardless of conduct in life. Mystery cults — especially the Eleusinian Mysteries and Orphic traditions — offered initiates a different promise: that proper initiation and ritual knowledge could secure a better fate after death, a significant departure from the default bleak picture of the Underworld."
+      "description": "Ordinary Olympian religion offered little assurance of a favorable afterlife regardless of conduct in life. Mystery cults, especially the Eleusinian Mysteries and Orphic traditions, offered initiates a different promise: proper initiation and ritual knowledge could secure a better fate after death, a significant departure from the default bleak picture of the Underworld."
     },
     {
       "title": "Heroization",
-      "description": "In rare cases, exceptional individuals were believed to escape the ordinary fate of the dead entirely, either through heroization (receiving cult worship after death as a local hero) or, in a small number of myths, apotheosis — being raised to full divine status, as in the case of Hercules."
+      "description": "In rare cases, exceptional individuals were believed to escape the ordinary fate of the dead entirely, either through heroization (receiving cult worship after death as a local hero) or, in a small number of myths, apotheosis, being raised to full divine status, as in the case of Hercules."
     }
   ],
   "related_deities": ["demeter", "hermes", "hercules"],
-  "image_landscape": "",
-  "image_portrait": "",
+  "image_landscape": "images/greek/death-and-afterlife1.jpg",
+  "image_portrait": "images/greek/death-and-afterlife2.jpg",
   "sources": [
     "Bowden, Hugh (2010). Mystery Cults in the Ancient World. Thames and Hudson.",
     "Burkert, Walter (1988). Ancient Mystery Cults. Harvard University Press.",
     "Homer, Odyssey (Book XI, the Underworld episode)",
-    "Encyclopaedia Britannica — Hades"
+    "Encyclopaedia Britannica, Hades"
   ]
 }

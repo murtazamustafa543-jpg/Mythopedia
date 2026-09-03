@@ -4,15 +4,15 @@
   "alt_names": ["Roman: Mercury"],
   "mythology": "Greek",
   "category": "god",
-  "summary": "Messenger of the gods and guide of souls to the Underworld. God of travelers, commerce, boundaries, and — notably — thieves and trickery, reflecting his own famously cunning infancy.",
+  "summary": "Messenger of the gods and guide of souls to the Underworld. God of travelers, commerce, boundaries, and, notably, thieves and trickery, reflecting his own famously cunning infancy.",
   "domain_role": "Messages, travel, commerce, boundaries, thievery, guidance of souls (psychopomp)",
   "image": "images/greek/hermes.jpg",
-  "origin_story": "Son of Zeus and the nymph Maia, Hermes displayed his defining cunning almost immediately after birth: according to the Homeric Hymn to Hermes, he stole Apollo's sacred cattle on the very day he was born, cleverly disguising the animals' tracks, then talked his way out of trouble with wit rather than force — earning Apollo's grudging respect and a place among the Olympians.",
+  "origin_story": "Son of Zeus and the nymph Maia, Hermes displayed his defining cunning almost immediately after birth. According to the Homeric Hymn to Hermes, he stole Apollo's sacred cattle on the very day he was born, cleverly disguising the animals' tracks, then talked his way out of trouble with wit rather than force. This earned Apollo's grudging respect and a place among the Olympians.",
   "achievements": [
     "Served as the official messenger of Zeus and the gods",
     "Guided the souls of the dead to the Underworld as a psychopomp",
     "Invented the lyre, which he later traded to Apollo",
-    "Patron of merchants, travelers, and — pointedly — thieves, reflecting his own trickster origins"
+    "Patron of merchants, travelers, and, pointedly, thieves, reflecting his own trickster origins"
   ],
   "relationships": [
     { "type": "parent", "target": "zeus" },
@@ -27,6 +27,6 @@
   "sources": [
     "Homeric Hymn to Hermes",
     "Hesiod, Theogony",
-    "Encyclopaedia Britannica — Hermes"
+    "Encyclopaedia Britannica, Hermes"
   ]
 }

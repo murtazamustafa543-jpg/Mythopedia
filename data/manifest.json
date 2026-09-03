@@ -5,7 +5,7 @@
       "title": "Aphrodite",
       "type": "character",
       "category": "god",
-      "summary": "Goddess of love, beauty, and desire. Her judgment-winning gift to Paris — the love of Helen — is the mythic spark that ignites the Trojan War."
+      "summary": "Goddess of love, beauty, and desire. Her judgment-winning gift to Paris, the love of Helen, is the mythic spark that ignites the Trojan War."
     },
     {
       "id": "apollo",
@@ -19,14 +19,14 @@
       "title": "Ares",
       "type": "character",
       "category": "god",
-      "summary": "God of war in its violent, chaotic form — contrasted with Athena, who embodied war's strategic and disciplined side. Son of Zeus and Hera, generally unpopular among the other Olympians in myth despite his martial importance."
+      "summary": "God of war in its violent, chaotic form, contrasted with Athena, who embodied war's strategic and disciplined side. Son of Zeus and Hera, generally unpopular among the other Olympians in myth despite his martial importance."
     },
     {
       "id": "artemis",
       "title": "Artemis",
       "type": "character",
       "category": "god",
-      "summary": "Goddess of the hunt, wilderness, and wild animals, and — somewhat paradoxically alongside her vow of eternal virginity — protector of young women and childbirth. Twin sister of Apollo."
+      "summary": "Goddess of the hunt, wilderness, and wild animals, and, somewhat paradoxically alongside her vow of eternal virginity, protector of young women and childbirth. Twin sister of Apollo."
     },
     {
       "id": "athena",
@@ -40,7 +40,7 @@
       "title": "Death and the Afterlife",
       "type": "topic",
       "category": "religion",
-      "summary": "Greek beliefs about death centered on the Underworld ruled by Hades, a shadowy realm most souls entered regardless of how they had lived — though mystery cults like the Eleusinian Mysteries and Orphism offered initiates hope of a better fate."
+      "summary": "Greek beliefs about death centered on the Underworld ruled by Hades, a shadowy realm most souls entered regardless of how they had lived, though mystery cults like the Eleusinian Mysteries and Orphism offered initiates hope of a better fate."
     },
     {
       "id": "demeter",
@@ -54,35 +54,35 @@
       "title": "Dionysus",
       "type": "character",
       "category": "god",
-      "summary": "God of wine, festivity, theater, and ritual ecstasy. Known as 'twice-born' for surviving his mortal mother's death before birth, and as the only Olympian born to a mortal parent — a status that made his acceptance among the gods a recurring theme in his myths."
+      "summary": "God of wine, festivity, theater, and ritual ecstasy. Known as 'twice-born' for surviving his mortal mother's death before birth, and as the only Olympian born to a mortal parent, a status that made his acceptance among the gods a recurring theme in his myths."
     },
     {
       "id": "greek-festivals",
       "title": "Religious Festivals",
       "type": "topic",
       "category": "religion",
-      "summary": "Religious festivals structured much of the Greek civic calendar, combining worship with athletic competition, theater, music, and communal feasting — public life and religious life were not treated as separate categories."
+      "summary": "Religious festivals structured much of the Greek civic calendar, combining worship with athletic competition, theater, music, and communal feasting. Public life and religious life were not treated as separate categories."
     },
     {
       "id": "greek-philosophy-and-religion",
       "title": "Greek Philosophy and Religion",
       "type": "topic",
       "category": "religion",
-      "summary": "From the 6th century BCE onward, Greek thinkers increasingly approached religious questions philosophically as well as ritually — reinterpreting the old myths allegorically, developing new doctrines about the soul, and, in late antiquity, blending philosophy with ritual practice itself. This entry was split out from the main Ancient Greek Religion page to give this material room to develop on its own."
+      "summary": "From the 6th century BCE onward, Greek thinkers increasingly approached religious questions philosophically as well as ritually. They reinterpreted the old myths allegorically, developed new doctrines about the soul, and, in late antiquity, blended philosophy with ritual practice itself. This entry was split out from the main Ancient Greek Religion page to give this material room to develop on its own."
     },
     {
       "id": "greek-religion",
       "title": "Ancient Greek Religion",
       "type": "topic",
       "category": "religion",
-      "summary": "Ancient Greek religion was a polytheistic system of worship centered on the Olympian gods and countless local deities, heroes, and spirits. Unlike modern organized religions, it had no single sacred text, founding prophet, or central authority — belief and practice varied by city-state, and religious life was woven directly into civic, domestic, and agricultural life rather than kept separate from it."
+      "summary": "Ancient Greek religion was a polytheistic system of worship centered on the Olympian gods and countless local deities, heroes, and spirits. Unlike modern organized religions, it had no single sacred text, founding prophet, or central authority. Belief and practice varied by city-state, and religious life was woven directly into civic, domestic, and agricultural life rather than kept separate from it."
     },
     {
       "id": "hellenic-culture-extent",
       "title": "The Extent of Hellenic Culture",
       "type": "topic",
       "category": "religion",
-      "summary": "Greek religion, language, and culture spread far beyond the Greek mainland through centuries of colonization and, later, the conquests of Alexander the Great — reaching from the western Mediterranean to Central Asia and shaping, and being shaped by, the cultures it encountered."
+      "summary": "Greek religion, language, and culture spread far beyond the Greek mainland through centuries of colonization and, later, the conquests of Alexander the Great. It reached from the western Mediterranean to Central Asia and shaped, and was shaped by, the cultures it encountered."
     },
     {
       "id": "hephaestus",
@@ -103,21 +103,28 @@
       "title": "Hermes",
       "type": "character",
       "category": "god",
-      "summary": "Messenger of the gods and guide of souls to the Underworld. God of travelers, commerce, boundaries, and — notably — thieves and trickery, reflecting his own famously cunning infancy."
+      "summary": "Messenger of the gods and guide of souls to the Underworld. God of travelers, commerce, boundaries, and, notably, thieves and trickery, reflecting his own famously cunning infancy."
     },
     {
       "id": "minor-deities-and-creatures",
       "title": "Minor Deities, Daimones & Mythical Creatures",
       "type": "topic",
       "category": "religion",
-      "summary": "Beyond the twelve Olympians, Greek religion and myth populated the world with countless lesser divine beings — nature spirits, personified forces, deified heroes, and monstrous creatures — that shaped everyday religious life and storytelling as much as the major gods did."
+      "summary": "Beyond the twelve Olympians, Greek religion and myth populated the world with countless lesser divine beings, including nature spirits, personified forces, deified heroes, and monstrous creatures. These beings shaped everyday religious life and storytelling as much as the major gods did."
+    },
+    {
+      "id": "murtaza",
+      "title": "Murtaza",
+      "type": "character",
+      "category": "hero",
+      "summary": "A mortal hero of legendary stubbornness who undertakes a series of increasingly ridiculous trials. The greatest of these is building an entire mythology encyclopedia from scratch."
     },
     {
       "id": "odysseus",
       "title": "Odysseus",
       "type": "character",
       "category": "hero",
-      "summary": "King of Ithaca, renowned for his cunning intelligence rather than raw strength. Central figure of Homer's Iliad and Odyssey — devised the Trojan Horse and spent ten years journeying home after the war."
+      "summary": "King of Ithaca, renowned for his cunning intelligence rather than raw strength. Central figure of Homer's Iliad and Odyssey. He devised the Trojan Horse and spent ten years journeying home after the war."
     },
     {
       "id": "oracles-and-divination",
@@ -134,18 +141,25 @@
       "summary": "God of the sea, earthquakes, and horses. Brother of Zeus and Hades, ruler of the waters after the three divided the cosmos following the Titanomachy."
     },
     {
+      "id": "perseus",
+      "title": "Perseus",
+      "type": "character",
+      "category": "hero",
+      "summary": "A legendary Greek hero and son of Zeus, best known for defeating the Gorgon Medusa and rescuing Andromeda from a sea monster."
+    },
+    {
       "id": "temples-and-sanctuaries",
       "title": "Temples and Sanctuaries",
       "type": "topic",
       "category": "religion",
-      "summary": "Greek religious architecture centered on the sanctuary (temenos) — a sacred, boundary-marked precinct that could contain a temple, altars, treasuries, and other structures — rather than the temple building alone. Some sanctuaries grew into major pan-Hellenic sites drawing visitors from across the Greek world."
+      "summary": "Greek religious architecture centered on the sanctuary (temenos), a sacred, boundary-marked precinct that could contain a temple, altars, treasuries, and other structures, rather than the temple building alone. Some sanctuaries grew into major pan-Hellenic sites drawing visitors from across the Greek world."
     },
     {
       "id": "the-odyssey",
       "title": "The Odyssey",
       "type": "event",
       "category": "event",
-      "summary": "Odysseus's ten-year journey home to Ithaca after the fall of Troy, filled with monsters, divine interference, and trials that test his cunning and endurance — the subject of Homer's epic poem of the same name."
+      "summary": "Odysseus's ten-year journey home to Ithaca after the fall of Troy was filled with monsters, divine interference, and trials that tested his cunning and endurance. It is the subject of Homer's epic poem of the same name."
     },
     {
       "id": "trojan-war",

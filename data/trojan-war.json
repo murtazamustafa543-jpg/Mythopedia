@@ -6,11 +6,11 @@
   "phases": [
     {
       "title": "The Judgment of Paris and the abduction of Helen",
-      "description": "The war's mythic origin traces to a beauty contest among three goddesses, judged by the Trojan prince Paris, who chose Aphrodite after she promised him the world's most beautiful woman — Helen, already married to Menelaus of Sparta."
+      "description": "The war's mythic origin traces to a beauty contest among three goddesses, judged by the Trojan prince Paris. He chose Aphrodite after she promised him the world's most beautiful woman, Helen, who was already married to Menelaus of Sparta."
     },
     {
       "title": "The Greek coalition gathers",
-      "description": "Menelaus's brother, Agamemnon, assembled a coalition of Greek kings and warriors — including Achilles, Odysseus, and Ajax — bound by an earlier oath to defend Helen's marriage, and sailed for Troy."
+      "description": "Menelaus's brother, Agamemnon, assembled a coalition of Greek kings and warriors, including Achilles, Odysseus, and Ajax. Bound by an earlier oath to defend Helen's marriage, they sailed for Troy."
     },
     {
       "title": "Nine years of siege",
@@ -18,19 +18,19 @@
     },
     {
       "title": "The Wrath of Achilles",
-      "description": "The central events of the Iliad: a dispute between Agamemnon and Achilles over a captive leads Achilles to withdraw from battle, with severe consequences for the Greek war effort — including the death of his close companion Patroclus, which draws Achilles back into the fighting to kill the Trojan hero Hector."
+      "description": "The central events of the Iliad begin with a dispute between Agamemnon and Achilles over a captive. Achilles withdraws from battle, causing severe consequences for the Greek war effort. The death of his close companion Patroclus draws Achilles back into the fighting, where he kills the Trojan hero Hector."
     },
     {
       "title": "The Trojan Horse and the fall of Troy",
-      "description": "Unable to breach Troy's walls by force, the Greeks — on Odysseus's plan — built a massive wooden horse, hid warriors inside, and pretended to sail away. The Trojans brought the horse inside their walls; the hidden Greeks emerged at night and opened the gates, and the city was destroyed."
+      "description": "Unable to breach Troy's walls by force, the Greeks followed Odysseus's plan. They built a massive wooden horse, hid warriors inside, and pretended to sail away. The Trojans brought the horse inside their walls. The hidden Greeks emerged at night, opened the gates, and destroyed the city."
     }
   ],
   "characters_involved": ["zeus", "athena", "odysseus"],
-  "image_landscape": "",
-  "image_portrait": "",
+  "image_landscape": "images/greek/trojanwar1.jpg",
+  "image_portrait": "images/greek/trojanwar2.jpg",
   "sources": [
     "Homer, Iliad",
     "Virgil, Aeneid (for the Trojan Horse episode)",
-    "Encyclopaedia Britannica — Trojan War"
+    "Encyclopaedia Britannica, Trojan War"
   ]
 }

@@ -2,7 +2,7 @@
   "id": "minor-deities-and-creatures",
   "title": "Minor Deities, Daimones & Mythical Creatures",
   "mythology": "Greek",
-  "summary": "Beyond the twelve Olympians, Greek religion and myth populated the world with countless lesser divine beings — nature spirits, personified forces, deified heroes, and monstrous creatures — that shaped everyday religious life and storytelling as much as the major gods did.",
+  "summary": "Beyond the twelve Olympians, Greek religion and myth populated the world with countless lesser divine beings, including nature spirits, personified forces, deified heroes, and monstrous creatures. These beings shaped everyday religious life and storytelling as much as the major gods did.",
   "key_aspects": [
     {
       "title": "Nymphs",
@@ -10,11 +10,11 @@
     },
     {
       "title": "Daimones",
-      "description": "In its original Greek sense, a daimon was not necessarily evil — the word described any lesser divine or spirit-force, often a personification of an abstract concept. Examples include Hypnos (Sleep), Thanatos (Death), Nike (Victory), and Nemesis (Retribution). These personifications received cult worship in some regions, distinct from the fully anthropomorphized Olympians."
+      "description": "In its original Greek sense, a daimon was not necessarily evil. The word described any lesser divine or spirit-force, often a personification of an abstract concept. Examples include Hypnos (Sleep), Thanatos (Death), Nike (Victory), and Nemesis (Retribution). These personifications received cult worship in some regions, distinct from the fully anthropomorphized Olympians."
     },
     {
       "title": "Satyrs and centaurs",
-      "description": "Satyrs — part-man, part-goat companions of Dionysus — embodied wild, uninhibited nature and featured prominently in his ecstatic retinue. Centaurs, part-man and part-horse, were mostly depicted as wild and violent, with the notable exception of Chiron, a wise centaur who tutored several Greek heroes, including Achilles."
+      "description": "Satyrs, part-man and part-goat companions of Dionysus, embodied wild, uninhibited nature and featured prominently in his ecstatic retinue. Centaurs, part-man and part-horse, were mostly depicted as wild and violent, with the notable exception of Chiron, a wise centaur who tutored several Greek heroes, including Achilles."
     },
     {
       "title": "Monsters and creatures",
@@ -22,16 +22,16 @@
     },
     {
       "title": "Hero cults",
-      "description": "Beyond gods and monsters, Greeks also worshipped deceased heroes — historical or legendary figures believed to retain power to protect or curse a local community from beyond the grave. Unlike Olympian worship, hero cults were typically centered on a hero's tomb or supposed burial site, and were local rather than pan-Hellenic in scope."
+      "description": "Beyond gods and monsters, Greeks also worshipped deceased heroes, historical or legendary figures believed to retain power to protect or curse a local community from beyond the grave. Unlike Olympian worship, hero cults were typically centered on a hero's tomb or supposed burial site, and were local rather than pan-Hellenic in scope."
     }
   ],
   "related_deities": ["dionysus", "hercules"],
-  "image_landscape": "",
-  "image_portrait": "",
+  "image_landscape": "images/greek/minor-deities-and-creatures1.jpg",
+  "image_portrait": "images/greek/minor-deities-and-creatures2.jpg",
   "sources": [
     "Hesiod, Theogony",
     "Apollodorus, Bibliotheca",
     "Eidinow, Esther & Julia Kindt (eds., 2017). The Oxford Handbook of Ancient Greek Religion. Oxford University Press.",
-    "Encyclopaedia Britannica — Greek mythology"
+    "Encyclopaedia Britannica, Greek mythology"
   ]
 }

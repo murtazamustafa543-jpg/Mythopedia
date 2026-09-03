@@ -6,11 +6,11 @@
   "key_aspects": [
     {
       "title": "The Oracle of Delphi",
-      "description": "The most famous oracle in the Greek world, sacred to Apollo. A priestess called the Pythia, seated on a tripod inside the temple, delivered prophecies in an altered state believed to be induced by the god, which priests then interpreted — often deliberately ambiguous — for the many individuals and city-states who consulted it before wars, colonization efforts, and other major decisions."
+      "description": "The most famous oracle in the Greek world was sacred to Apollo. A priestess called the Pythia, seated on a tripod inside the temple, delivered prophecies in an altered state believed to be induced by the god. Priests then interpreted these messages, often deliberately ambiguously, for the many individuals and city-states who consulted the oracle before wars, colonization efforts, and other major decisions."
     },
     {
       "title": "The Oracle of Dodona",
-      "description": "An older oracle sacred to Zeus, located in northwestern Greece, where priests interpreted the rustling of leaves in a sacred oak tree as divine messages — considered one of the oldest oracular sites in the Greek world."
+      "description": "An older oracle sacred to Zeus was located in northwestern Greece. There, priests interpreted the rustling of leaves in a sacred oak tree as divine messages. It was considered one of the oldest oracular sites in the Greek world."
     },
     {
       "title": "The Oracle of Trophonius",
@@ -22,15 +22,15 @@
     },
     {
       "title": "Political and military role",
-      "description": "Oracular consultation was not a private or marginal matter — city-states regularly sent official delegations to Delphi before founding colonies, declaring wars, or making major policy decisions, treating the god's response as carrying real, binding weight in public affairs."
+      "description": "Oracular consultation was not a private or marginal matter. City-states regularly sent official delegations to Delphi before founding colonies, declaring wars, or making major policy decisions. They treated the god's response as carrying real, binding weight in public affairs."
     }
   ],
   "related_deities": ["apollo", "zeus"],
-  "image_landscape": "",
-  "image_portrait": "",
+  "image_landscape": "images/greek/oracles-and-divination1.jpg",
+  "image_portrait": "images/greek/oracles-and-divination2.jpg",
   "sources": [
     "Ustinova, Yulia (2017). Divine Mania: Alterations of Consciousness in Ancient Greece. Routledge.",
     "Parker, Robert C.T. (2011). On Greek Religion. Cornell University Press.",
-    "Encyclopaedia Britannica — Delphic oracle"
+    "Encyclopaedia Britannica, Delphic oracle"
   ]
 }

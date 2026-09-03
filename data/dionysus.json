@@ -4,10 +4,10 @@
   "alt_names": ["Roman: Bacchus"],
   "mythology": "Greek",
   "category": "god",
-  "summary": "God of wine, festivity, theater, and ritual ecstasy. Known as 'twice-born' for surviving his mortal mother's death before birth, and as the only Olympian born to a mortal parent — a status that made his acceptance among the gods a recurring theme in his myths.",
+  "summary": "God of wine, festivity, theater, and ritual ecstasy. Known as 'twice-born' for surviving his mortal mother's death before birth, and as the only Olympian born to a mortal parent, a status that made his acceptance among the gods a recurring theme in his myths.",
   "domain_role": "Wine, festivity, theater, ecstatic ritual, fertility of the vine",
   "image": "images/greek/dionysus.jpg",
-  "origin_story": "Dionysus was the son of Zeus and the mortal princess Semele. Tricked by a jealous Hera into asking Zeus to reveal his full divine form, Semele was incinerated by his divine radiance; Zeus rescued the unborn Dionysus and sewed him into his own thigh until he was ready to be born — hence his epithet 'twice-born.' He was raised in secret, away from Hera's wrath, before eventually being welcomed onto Olympus.",
+  "origin_story": "Dionysus was the son of Zeus and the mortal princess Semele. Tricked by a jealous Hera into asking Zeus to reveal his full divine form, Semele was incinerated by his divine radiance; Zeus rescued the unborn Dionysus and sewed him into his own thigh until he was ready to be born, hence his epithet 'twice-born.' He was raised in secret, away from Hera's wrath, before eventually being welcomed onto Olympus.",
   "achievements": [
     "Established the cult of wine and ritual ecstasy across the Greek world, often meeting fierce resistance from mortal rulers who refused to recognize him",
     "Patron god of the City Dionysia festival in Athens, from which Greek tragedy and comedy as theatrical forms emerged",
@@ -25,6 +25,6 @@
   "sources": [
     "Euripides, The Bacchae",
     "Hesiod, Theogony",
-    "Encyclopaedia Britannica — Dionysus"
+    "Encyclopaedia Britannica, Dionysus"
   ]
 }

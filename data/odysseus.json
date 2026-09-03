@@ -4,8 +4,8 @@
   "alt_names": ["Ulysses (Roman name)"],
   "mythology": "Greek",
   "category": "hero",
-  "summary": "King of Ithaca, renowned for his cunning intelligence rather than raw strength. Central figure of Homer's Iliad and Odyssey — devised the Trojan Horse and spent ten years journeying home after the war.",
-  "domain_role": "Cunning, strategy, leadership — the archetypal 'clever hero'",
+  "summary": "King of Ithaca, renowned for his cunning intelligence rather than raw strength. Central figure of Homer's Iliad and Odyssey. He devised the Trojan Horse and spent ten years journeying home after the war.",
+  "domain_role": "Cunning, strategy, and leadership. The archetypal 'clever hero'",
   "image": "images/greek/odysseus.jpg",
   "origin_story": "Odysseus was king of the island of Ithaca, married to Penelope, with a son, Telemachus. Reluctant to join the Trojan War (some versions say he feigned madness to avoid the draft), he was eventually compelled to go and became one of the Greeks' most valuable strategists, credited with devising the Trojan Horse that led to Troy's fall.",
   "achievements": [
@@ -28,6 +28,6 @@
   "sources": [
     "Homer, Iliad",
     "Homer, Odyssey",
-    "Encyclopaedia Britannica — Odysseus"
+    "Encyclopaedia Britannica, Odysseus"
   ]
 }

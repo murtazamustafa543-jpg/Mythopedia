@@ -1,4 +1,4 @@
-// Mythologica — SPA front end
+// Mythologica, SPA front end
 // Loads curated JSON from /data, routes in-page, no LLM in this build.
 
 const DATA_DIR = "data/";
@@ -138,7 +138,7 @@ function renderHome() {
       <div class="eyebrow">A REFERENCE FOR THE MYTHIC AND THE HISTORICAL</div>
       <h1>THE ANCIENT GREECE</h1>
       <div class="oxide-rule"></div>
-      <p>An encyclopedia of Greek mythology and religion — the Olympians, the heroes who challenged them, the wars and journeys that defined them, and the temples, oracles, and rites through which they were worshipped.</p>
+      <p>An encyclopedia of Greek mythology and religion, covering the Olympians, the heroes who challenged them, the wars and journeys that defined them, and the temples, oracles, and rites through which they were worshipped.</p>
       </div>
     </div>
     <div class="page" style="padding-top:0;">
@@ -278,7 +278,7 @@ function relationshipsHTML(relationships) {
 
 async function renderCharacter(id) {
   const d = await loadEntry(id);
-  document.title = `${d.name} — Mythologica`;
+  document.title = `${d.name}, Mythologica`;
   const altName = d.alt_names?.[0] ? `<div class="alt-name">${escapeHtml(d.alt_names[0])}</div>` : "";
   const symbols = (d.symbols || []).map(s => `<span class="symbol-tag">${escapeHtml(s)}</span>`).join("");
   const eventsHTML = (d.related_events || [])
@@ -310,7 +310,7 @@ async function renderCharacter(id) {
       <div class="hero">
         <div class="portrait">${portraitHTML}</div>
         <div class="hero-text">
-          <div class="domain-label">${categoryLabel(d.category)} — ${escapeHtml(d.domain_role || "")}</div>
+          <div class="domain-label">${categoryLabel(d.category)}, ${escapeHtml(d.domain_role || "")}</div>
           <h1 class="title">${escapeHtml(d.name)}</h1>
           ${altName}
           <div class="oxide-rule"></div>
@@ -337,7 +337,7 @@ async function renderCharacter(id) {
 
 async function renderEvent(id) {
   const d = await loadEntry(id);
-  document.title = `${d.title} — Mythologica`;
+  document.title = `${d.title}, Mythologica`;
   const phasesHTML = (d.phases || []).map(p =>
     `<li><span class="phase-title">${escapeHtml(p.title)}</span>${escapeHtml(p.description)}</li>`).join("");
   const charsHTML = (d.characters_involved || []).map(c => `<li>${linkToEntry(c)}</li>`).join("");
@@ -410,7 +410,7 @@ async function renderTopic(id) {
 }
 
 function renderNotFound(kind, id) {
-  document.title = "Not found — Mythologica";
+  document.title = "Not found, Mythologica";
   return `
     <div class="page">
       <h1 class="title">No page for ${escapeHtml(id)}</h1>
@@ -496,10 +496,10 @@ async function renderRoute() {
     const { parts, params } = route;
     let html;
     if (parts.length === 0) {
-      document.title = "Mythologica — A Greek Mythology Encyclopedia";
+      document.title = "Mythologica, A Greek Mythology Encyclopedia";
       html = renderHome();
     } else if (parts[0] === "browse") {
-      document.title = "Greek Mythology — Mythologica";
+      document.title = "Greek Mythology, Mythologica";
       html = renderBrowse(params);
     } else if (parts[0] === "character" && parts[1]) {
       html = catalog.byId.has(parts[1]) ? await renderCharacter(parts[1]) : renderNotFound("character", parts[1]);

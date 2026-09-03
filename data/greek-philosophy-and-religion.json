@@ -2,15 +2,15 @@
   "id": "greek-philosophy-and-religion",
   "title": "Greek Philosophy and Religion",
   "mythology": "Greek",
-  "summary": "From the 6th century BCE onward, Greek thinkers increasingly approached religious questions philosophically as well as ritually — reinterpreting the old myths allegorically, developing new doctrines about the soul, and, in late antiquity, blending philosophy with ritual practice itself. This entry was split out from the main Ancient Greek Religion page to give this material room to develop on its own.",
+  "summary": "From the 6th century BCE onward, Greek thinkers increasingly approached religious questions philosophically as well as ritually. They reinterpreted the old myths allegorically, developed new doctrines about the soul, and, in late antiquity, blended philosophy with ritual practice itself. This entry was split out from the main Ancient Greek Religion page to give this material room to develop on its own.",
   "key_aspects": [
     {
       "title": "The Presocratics",
-      "description": "The earliest Greek philosophers, active before Socrates, began asking what the fundamental nature of reality was in terms that moved away from purely mythic explanation — though not entirely apart from religious thought. Their ideas laid groundwork for later, more explicitly religious philosophical systems."
+      "description": "The earliest Greek philosophers, active before Socrates, began asking what the fundamental nature of reality was in terms that moved away from purely mythic explanation, though not entirely apart from religious thought. Their ideas laid groundwork for later, more explicitly religious philosophical systems."
     },
     {
       "title": "Pythagoreanism",
-      "description": "Pythagoras and his followers combined mathematics, cosmology, and religious doctrine, notably teaching the transmigration of souls (metempsychosis) — the idea that souls are reborn across multiple lives. Pythagorean communities practiced distinctive ritual and dietary rules alongside their philosophical and mathematical study."
+      "description": "Pythagoras and his followers combined mathematics, cosmology, and religious doctrine, notably teaching the transmigration of souls (metempsychosis), the idea that souls are reborn across multiple lives. Pythagorean communities practiced distinctive ritual and dietary rules alongside their philosophical and mathematical study."
     },
     {
       "title": "Orphism",
@@ -18,16 +18,16 @@
     },
     {
       "title": "Stoicism",
-      "description": "Stoic philosophy, founded by Zeno of Citium, reframed the traditional gods as expressions of a single rational, providential order pervading the cosmos (the Logos) — an influential reinterpretation that kept the old gods' names while giving them a very different philosophical meaning."
+      "description": "Stoic philosophy, founded by Zeno of Citium, reframed the traditional gods as expressions of a single rational, providential order pervading the cosmos (the Logos). This influential reinterpretation kept the old gods' names while giving them a very different philosophical meaning."
     },
     {
       "title": "Neoplatonism and theurgy",
-      "description": "In late antiquity, Neoplatonist philosophers — notably Plotinus, Iamblichus, and Proclus — built sophisticated metaphysical systems centered on a single transcendent source (the One) from which reality emanates, reinterpreting traditional myths allegorically within this framework. Iamblichus in particular developed theurgy: structured ritual practices intended to unite the soul with the divine, treated as a necessary complement to philosophical contemplation rather than folk superstition."
+      "description": "In late antiquity, Neoplatonist philosophers, notably Plotinus, Iamblichus, and Proclus, built sophisticated metaphysical systems centered on a single transcendent source (the One) from which reality emanates. They reinterpreted traditional myths allegorically within this framework. Iamblichus in particular developed theurgy, structured ritual practices intended to unite the soul with the divine and treated as a necessary complement to philosophical contemplation rather than folk superstition."
     }
   ],
   "related_deities": [],
-  "image_landscape": "",
-  "image_portrait": "",
+  "image_landscape": "images/greek/greek-philosophy-and-religion1.jpg",
+  "image_portrait": "images/greek/greek-philosophy-and-religion2.jpg",
   "sources": [
     "Kirk, G.S., J.E. Raven & M. Schofield (1983). The Presocratic Philosophers, 2nd ed. Cambridge University Press.",
     "Huffman, Carl A. (ed., 2017). A History of Pythagoreanism. Cambridge University Press.",
