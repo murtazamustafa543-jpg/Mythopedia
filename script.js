@@ -97,6 +97,33 @@ function cardHTML(entry) {
     </a>`;
 }
 
+function browseCardHTML(entry) {
+  return `
+    <a class="card browse-card" href="${hrefFor(entry)}" data-nav>
+      <div class="browse-card-body">
+        <div class="cat-label">${categoryLabel(entry.category).toUpperCase()}</div>
+        <h3>${escapeHtml(entry.title)}</h3>
+        <p>${escapeHtml(entry.summary)}</p>
+        <span class="browse-card-link">Open entry <span aria-hidden="true">&#8594;</span></span>
+      </div>
+    </a>`;
+}
+
+function homeCardHTML(entry) {
+  const imageNames = { "trojan-war": "trojanwar1.jpg" };
+  const imageSrc = `images/greek/${imageNames[entry.id] || `${entry.id}.jpg`}`;
+  return `
+    <a class="card home-card" href="${hrefFor(entry)}" data-nav>
+      <div class="home-card-image"><img src="${imageSrc}" alt="${escapeHtml(entry.title)}"></div>
+      <div class="home-card-body">
+        <div class="cat-label">${categoryLabel(entry.category).toUpperCase()}</div>
+        <h3>${escapeHtml(entry.title)}</h3>
+        <p>${escapeHtml(entry.summary)}</p>
+        <span class="home-card-link">Open entry <span aria-hidden="true">&#8594;</span></span>
+      </div>
+    </a>`;
+}
+
 function escapeHtml(str) {
   return String(str || "")
     .replace(/&/g, "&amp;")
@@ -139,11 +166,22 @@ function renderHome() {
       <h1>THE ANCIENT GREECE</h1>
       <div class="oxide-rule"></div>
       <p>An encyclopedia of Greek mythology and religion, covering the Olympians, the heroes who challenged them, the wars and journeys that defined them, and the temples, oracles, and rites through which they were worshipped.</p>
+      <div class="hero-actions">
+        <a class="hero-action hero-action-primary" href="#/browse" data-nav>Explore the collection <span aria-hidden="true">&#8594;</span></a>
+        <a class="hero-action" href="#/browse?filter=god" data-nav>Meet the gods</a>
       </div>
+      </div>
+      <a class="scroll-cue" href="#home-categories" aria-label="Scroll to explore categories"><span>Explore below</span><span aria-hidden="true">&#8595;</span></a>
     </div>
     <div class="page" style="padding-top:0;">
-      <div class="home-categories">
-      <section class="category-section">
+      <div class="home-categories" id="home-categories">
+      <div class="home-stats home-reveal" aria-label="Collection statistics">
+        <div><strong>${counts.god}</strong><span>Gods</span></div>
+        <div><strong>${counts.hero}</strong><span>Heroes</span></div>
+        <div><strong>${counts.event}</strong><span>Events</span></div>
+        <div><strong>${counts.religion}</strong><span>Practices</span></div>
+      </div>
+      <section class="category-section home-reveal">
       <div class="section-head"><h2>Explore by category</h2></div>
       <div class="gateway">
         <a href="#/browse?filter=god" data-nav>
@@ -168,12 +206,12 @@ function renderHome() {
         </a>
       </div>
       </section>
-      <section class="collection-section">
+      <section class="collection-section home-reveal">
       <div class="section-head">
         <h2>Start here</h2>
         <a href="#/browse" data-nav>Browse all ${catalog.greek.length}</a>
       </div>
-      <div class="grid">${featured.map(cardHTML).join("")}</div>
+      <div class="grid home-featured-grid">${featured.map(homeCardHTML).join("")}</div>
       </section>
       </div>
     </div>`;
@@ -196,12 +234,13 @@ function renderBrowse(params) {
   const query = (params.get("q") || "").trim();
   const filtered = filteredEntries(filter, query);
   const tabs = [
-    ["all", "All"],
-    ["god", "Gods"],
-    ["hero", "Heroes"],
-    ["event", "Events"],
-    ["religion", "Religion & Practice"],
+    ["all", "All", "✦"],
+    ["god", "Gods", "♔"],
+    ["hero", "Heroes", "⚔"],
+    ["event", "Events", "◈"],
+    ["religion", "Religion & Practice", "◉"],
   ];
+  const counts = Object.fromEntries(["god", "hero", "event", "religion"].map(category => [category, catalog.greek.filter(entry => entry.category === category).length]));
   return `
     <div class="crumb"><a href="#/" data-nav>Home</a> / Greek</div>
     <div class="page">
@@ -214,16 +253,22 @@ function renderBrowse(params) {
       </div>
       <div class="greek-collection">
       <input class="browse-search" id="browse-search" type="search" placeholder="Filter this list…" value="${escapeHtml(query)}">
+      <div class="browse-stats">
+        <span><strong>${catalog.greek.length}</strong> entries</span>
+        <span><strong>${counts.god}</strong> gods</span>
+        <span><strong>${counts.hero}</strong> heroes</span>
+        <span><strong>${counts.event + counts.religion}</strong> stories and practices</span>
+      </div>
       <div class="section-head" style="margin-top:24px;">
         <div class="tabs">
-          ${tabs.map(([id, label]) =>
-            `<button class="tab${filter === id ? " active" : ""}" data-filter="${id}">${label}</button>`
+          ${tabs.map(([id, label, symbol]) =>
+            `<button class="tab${filter === id ? " active" : ""}" data-filter="${id}"><span class="tab-symbol" aria-hidden="true">${symbol}</span>${label}</button>`
           ).join("")}
         </div>
         <span class="count" id="result-count">${filtered.length} entries</span>
       </div>
       <div class="grid" id="landing-grid">
-        ${filtered.length ? filtered.map(cardHTML).join("") : `<p class="empty-state">No entries match “${escapeHtml(query)}”.</p>`}
+        ${filtered.length ? filtered.map(browseCardHTML).join("") : `<p class="empty-state">No entries match “${escapeHtml(query)}”.</p>`}
       </div>
       </div>
     </div>`;
@@ -234,9 +279,13 @@ function paintBrowseGrid(filter, query) {
   const grid = document.getElementById("landing-grid");
   const countEl = document.getElementById("result-count");
   if (grid) {
-    grid.innerHTML = filtered.length
-      ? filtered.map(cardHTML).join("")
-      : `<p class="empty-state">No entries match “${escapeHtml(query)}”.</p>`;
+    grid.classList.add("is-refreshing");
+    requestAnimationFrame(() => {
+      grid.innerHTML = filtered.length
+        ? filtered.map(browseCardHTML).join("")
+        : `<p class="empty-state">No entries match “${escapeHtml(query)}”.</p>`;
+      grid.classList.remove("is-refreshing");
+    });
   }
   if (countEl) countEl.textContent = `${filtered.length} entries`;
 }
@@ -328,8 +377,8 @@ async function renderCharacter(id) {
           ${sourcesHTML ? `<div class="sidebar-block"><h3>Sources</h3><ul class="sources-list">${sourcesHTML}</ul></div>` : ""}
         </aside>
         <main class="main">
-          <section><h2>Origin</h2><p>${escapeHtml(d.origin_story || "")}</p></section>
-          ${achievementsHTML ? `<section><h2>Achievements</h2><ul class="achievements">${achievementsHTML}</ul></section>` : ""}
+          <details class="content-drawer" open><summary>Origin</summary><p>${escapeHtml(d.origin_story || "")}</p></details>
+          ${achievementsHTML ? `<details class="content-drawer" open><summary>Achievements</summary><ul class="achievements">${achievementsHTML}</ul></details>` : ""}
         </main>
       </div>
     </div>`;
@@ -367,7 +416,7 @@ async function renderEvent(id) {
           <div class="portrait-slot">${portraitImage}</div>
         </aside>
         <main class="main">
-          <section><h2>Timeline</h2><ol class="phase-list">${phasesHTML}</ol></section>
+          <details class="content-drawer" open><summary>Timeline</summary><ol class="phase-list">${phasesHTML}</ol></details>
         </main>
       </div>
     </div>`;
@@ -404,7 +453,7 @@ async function renderTopic(id) {
           ${sourcesHTML ? `<div class="sidebar-block"><h3>Sources</h3><ul class="sources-list">${sourcesHTML}</ul></div>` : ""}
           <div class="portrait-slot">${portraitImage}</div>
         </aside>
-        <main class="main">${aspectsHTML}</main>
+        <main class="main">${aspectsHTML.replace(/<div class="aspect">/g, '<details class="content-drawer aspect"><summary>').replace(/<\/h3><p>/g, '</summary><p>').replace(/<\/p><\/div>/g, '</p></details>')}</main>
       </div>
     </div>`;
 }
@@ -442,6 +491,23 @@ function wireHomeTilt() {
     image.style.setProperty("--image-tilt-x", "0deg");
     image.style.setProperty("--image-tilt-y", "0deg");
   });
+}
+
+function wireHomeReveals() {
+  const elements = document.querySelectorAll(".home-reveal");
+  if (!elements.length || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    elements.forEach(element => element.classList.add("is-visible"));
+    return;
+  }
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.14 });
+  elements.forEach(element => observer.observe(element));
 }
 
 function wireContentImages() {
@@ -516,6 +582,9 @@ async function renderRoute() {
     root.classList.add("is-entering");
     window.scrollTo({ top: 0, behavior: "smooth" });
     if (parts.length === 0) wireHomeTilt();
+    if (parts.length === 0) {
+      wireHomeReveals();
+    }
     if (parts[0] === "browse") wireBrowse(params);
     if (["character", "event", "topic"].includes(parts[0])) wireContentImages();
     if (parts[0] === "browse") wireGreekBrowseImage();
@@ -605,6 +674,15 @@ function closeSearch() {
   if (overlay) overlay.hidden = true;
 }
 
+function updateReadingProgress() {
+  const progress = document.getElementById("reading-progress");
+  const backToTop = document.getElementById("back-to-top");
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const percent = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+  if (progress) progress.style.width = `${percent}%`;
+  if (backToTop) backToTop.classList.toggle("is-visible", window.scrollY > 420);
+}
+
 function wireChrome() {
   document.addEventListener("click", onNavClick);
   document.getElementById("search-toggle")?.addEventListener("click", openSearch);
@@ -628,6 +706,11 @@ function wireChrome() {
     if (e.key === "Escape") closeSearch();
   });
   window.addEventListener("hashchange", renderRoute);
+  window.addEventListener("scroll", updateReadingProgress, { passive: true });
+  document.getElementById("back-to-top")?.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  updateReadingProgress();
 }
 
 migrateLegacyUrl();
