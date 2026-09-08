@@ -5,13 +5,16 @@
   "mythology": "Greek",
   "category": "god",
   "summary": "Goddess of love, beauty, and desire. Her judgment-winning gift to Paris, the love of Helen, is the mythic spark that ignites the Trojan War.",
+  "cultural_context": "Aphrodite was worshipped in many parts of the Greek world, with important sanctuaries at Corinth, Cyprus, and Cytherea. Her worship connected love, fertility, beauty, marriage, and the power of desire to both private life and civic religion.",
   "domain_role": "Love, beauty, desire, fertility",
   "image": "images/greek/aphrodite.jpg",
   "origin_story": "Two origin stories exist. In Hesiod's account, Aphrodite arose from the sea foam formed when the Titan Cronus cast the severed genitals of his father Uranus into the ocean, making her older than the Olympians themselves. Homer's account instead makes her a daughter of Zeus and the minor goddess Dione, born as an ordinary Olympian.",
   "achievements": [
     "Awarded the golden apple in the Judgment of Paris by promising him the world's most beautiful woman, Helen, setting the Trojan War in motion",
     "Supported Troy during the Trojan War",
-    "Widely worshipped across the Greek world, with major cult centers on Cyprus and Cythera"
+    "Widely worshipped across the Greek world, with major cult centers on Cyprus and Cythera",
+    "Inspired the love between Helen and Paris, becoming one of the divine causes of the Trojan War",
+    "Protected her son Aeneas during the Trojan War and helped preserve his place in heroic tradition"
   ],
   "relationships": [
     { "type": "spouse", "target": "hephaestus" },

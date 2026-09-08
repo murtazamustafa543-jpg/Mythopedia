@@ -5,6 +5,7 @@
   "mythology": "Greek",
   "category": "god",
   "summary": "Goddess of the hunt, wilderness, and wild animals, and, somewhat paradoxically alongside her vow of eternal virginity, protector of young women and childbirth. Twin sister of Apollo.",
+  "cultural_context": "Artemis was worshipped as a guardian of transitions, especially the movement from childhood to adulthood. Her sanctuaries could be associated with young women, childbirth, animals, and the boundary between settled communities and the wilderness.",
   "domain_role": "The hunt, wilderness, wild animals, chastity, childbirth, the moon (in later tradition)",
   "image": "images/greek/artemis.jpg",
   "origin_story": "Born to Zeus and Leto alongside her twin brother Apollo, Artemis famously asked her father Zeus, while still a child, to grant her eternal virginity and freedom to roam the wilderness with her band of nymph companions, rather than marry.",
@@ -12,7 +13,9 @@
     "Served as protector of young girls and women in childbirth despite her own vow of virginity",
     "Presided over one of the most important cult centers in the Greek world at Ephesus",
     "Fiercely punished mortals who offended her, as in the myth of the hunter Actaeon",
-    "Fought on the side of Troy during the Trojan War, alongside her brother Apollo"
+    "Fought on the side of Troy during the Trojan War, alongside her brother Apollo",
+    "Established a major sanctuary at Ephesus, where her worship developed distinctive local forms",
+    "Protected wild animals while also enforcing strict boundaries against hunters who violated her sacred spaces"
   ],
   "relationships": [
     { "type": "parent", "target": "zeus" },

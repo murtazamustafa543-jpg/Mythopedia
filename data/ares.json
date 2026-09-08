@@ -5,13 +5,16 @@
   "mythology": "Greek",
   "category": "god",
   "summary": "God of war in its violent, chaotic form, contrasted with Athena, who embodied war's strategic and disciplined side. Son of Zeus and Hera, generally unpopular among the other Olympians in myth despite his martial importance.",
+  "cultural_context": "Ares represents the frightening violence and disorder of battle rather than the civic strategy celebrated by Athena. His limited popularity in surviving literature does not mean war lacked religious importance; Greek communities honored many war-related gods and heroes in different local traditions.",
   "domain_role": "War, violence, bloodshed, courage in battle",
   "image": "images/greek/ares.jpg",
   "origin_story": "Ares was born to Zeus and Hera, making him one of the few Olympians who was the legitimate child of both reigning king and queen of the gods. Despite this, he was frequently portrayed unfavorably in myth, impulsive, bloodthirsty, and, in several stories, humiliated or bested by other gods and even mortal heroes.",
   "achievements": [
     "Personified the raw, chaotic aspect of warfare in Greek thought, distinct from Athena's strategic warfare",
     "Held particular religious importance in Sparta, a famously militaristic city-state",
-    "Fathered several children associated with war and violence, including the Amazons in some traditions"
+    "Fathered several children associated with war and violence, including the Amazons in some traditions",
+    "Supported the Amazons and other warrior peoples in traditions that connected him with courage and battle strength",
+    "Appeared in the Trojan War as a divine warrior whose physical force could still be overcome by strategy"
   ],
   "relationships": [
     { "type": "parent", "target": "zeus" },

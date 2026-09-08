@@ -5,6 +5,7 @@
   "mythology": "Greek",
   "category": "hero",
   "summary": "King of Ithaca, renowned for his cunning intelligence rather than raw strength. Central figure of Homer's Iliad and Odyssey. He devised the Trojan Horse and spent ten years journeying home after the war.",
+  "cultural_context": "Odysseus became a lasting model of the resourceful traveler and survivor. The Odyssey also explores homecoming, identity, loyalty, hospitality, and the tension between a hero's desire for glory and his responsibility to return to family and community.",
   "domain_role": "Cunning, strategy, and leadership. The archetypal 'clever hero'",
   "image": "images/greek/odysseus.jpg",
   "origin_story": "Odysseus was king of the island of Ithaca, married to Penelope, with a son, Telemachus. Reluctant to join the Trojan War (some versions say he feigned madness to avoid the draft), he was eventually compelled to go and became one of the Greeks' most valuable strategists, credited with devising the Trojan Horse that led to Troy's fall.",
@@ -12,7 +13,10 @@
     "Devised the Trojan Horse strategy that ended the ten-year siege of Troy",
     "Survived a ten-year journey home, encountering the Cyclops Polyphemus, the sorceress Circe, and the Sirens",
     "Descended to the Underworld to consult the prophet Tiresias",
-    "Reclaimed his kingdom and reunited with his wife Penelope after twenty years away"
+    "Reclaimed his kingdom and reunited with his wife Penelope after twenty years away",
+    "Escaped Polyphemus by using the false name Nobody and a carefully planned deception",
+    "Resisted the Sirens' song by having his crew bind him to the ship's mast",
+    "Restored order in Ithaca by defeating the suitors who had occupied his household"
   ],
   "relationships": [
     { "type": "spouse", "target": "penelope" },

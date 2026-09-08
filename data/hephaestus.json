@@ -5,6 +5,7 @@
   "mythology": "Greek",
   "category": "god",
   "summary": "God of fire, the forge, and craftsmanship. The master smith of Olympus, who forged weapons, armor, and marvels for both gods and mortal heroes, despite being lame and, in most versions, cast out by his own mother at birth.",
+  "cultural_context": "Hephaestus gave divine importance to skilled labor, metallurgy, and the craftspeople who made tools, weapons, and sacred objects. His cult was especially important in Athens, where he was honored alongside Athena as a patron of technical skill and invention.",
   "domain_role": "Fire, blacksmithing, metalworking, craftsmanship, volcanoes",
   "image": "images/greek/hephaestus.jpg",
   "origin_story": "Accounts of Hephaestus's birth vary. In one version, Hera bore him alone, without Zeus, and threw him from Olympus in disgust at his lameness; in another, Zeus threw him from Olympus after Hephaestus took Hera's side in a quarrel. Either way, he was raised outside Olympus before eventually returning as its master craftsman.",
@@ -12,7 +13,9 @@
     "Forged the armor and shield of Achilles at his mother Thetis's request, described in detail in the Iliad",
     "Built the palaces of the gods on Mount Olympus",
     "Created Pandora, the first woman, at Zeus's command",
-    "Crafted numerous magical objects and weapons used by gods and heroes throughout Greek myth"
+    "Crafted numerous magical objects and weapons used by gods and heroes throughout Greek myth",
+    "Built mechanical servants and golden attendants that demonstrated his unmatched inventive skill",
+    "Created the net that exposed the affair of Ares and Aphrodite before the assembled Olympians"
   ],
   "relationships": [
     { "type": "parent", "target": "hera" },

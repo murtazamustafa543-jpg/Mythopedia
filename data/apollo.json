@@ -5,6 +5,7 @@
   "mythology": "Greek",
   "category": "god",
   "summary": "God of prophecy, light, music, healing, and archery. Twin brother of Artemis, closely associated with the Oracle of Delphi and regarded as a patron of the arts and reason.",
+  "cultural_context": "Apollo's sanctuary at Delphi became one of the most influential religious centers in the Greek world. Pilgrims and city-states consulted the oracle, while festivals such as the Pythian Games linked his worship with music, poetry, athletic competition, and civic identity.",
   "domain_role": "Prophecy, music, poetry, healing, archery, the sun (in later tradition)",
   "image": "images/greek/apollo.jpg",
   "origin_story": "Apollo and his twin sister Artemis were born to Zeus and the Titaness Leto, who was forced to wander in search of a place to give birth after the jealous Hera forbade any land from sheltering her. The floating island of Delos finally accepted her, and it became one of Apollo's most sacred sites.",
@@ -12,7 +13,9 @@
     "Slew the serpent Python at Delphi, establishing the site as his own and the seat of his famous Oracle",
     "Presided over the Oracle of Delphi, where the priestess (the Pythia) delivered his prophecies",
     "Regarded as patron of music and poetry, often depicted with a lyre",
-    "Fought on the side of Troy during the Trojan War, in opposition to Athena and Hera"
+    "Fought on the side of Troy during the Trojan War, in opposition to Athena and Hera",
+    "Associated with healing through his son Asclepius and with plague through his arrows",
+    "Established the Pythian Games at Delphi, connecting his worship with music, poetry, and athletic competition"
   ],
   "relationships": [
     { "type": "parent", "target": "zeus" },

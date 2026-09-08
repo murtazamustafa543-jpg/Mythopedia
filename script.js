@@ -601,6 +601,9 @@ async function renderCharacter(id) {
     .map(e => `<li>${linkToEntry(e)}</li>`).join("");
   const sourcesHTML = (d.sources || []).map(s => `<li>${escapeHtml(s)}</li>`).join("");
   const achievementsHTML = (d.achievements || []).map(a => `<li>${escapeHtml(a)}</li>`).join("");
+  const culturalContextHTML = d.cultural_context
+    ? `<details class="content-drawer" open><summary>Cultural Context</summary><p>${escapeHtml(d.cultural_context)}</p></details>`
+    : "";
   const initial = (d.name || "?").charAt(0);
 
   // Check for image path in JSON
@@ -642,6 +645,7 @@ async function renderCharacter(id) {
         <main class="main">
           <details class="content-drawer" open><summary>Origin</summary><p>${escapeHtml(d.origin_story || "")}</p></details>
           ${achievementsHTML ? `<details class="content-drawer" open><summary>Achievements</summary><ul class="achievements">${achievementsHTML}</ul></details>` : ""}
+          ${culturalContextHTML}
         </main>
       </div>
     </div>`;

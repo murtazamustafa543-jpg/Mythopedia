@@ -5,6 +5,7 @@
   "mythology": "Greek",
   "category": "god",
   "summary": "Messenger of the gods and guide of souls to the Underworld. God of travelers, commerce, boundaries, and, notably, thieves and trickery, reflecting his own famously cunning infancy.",
+  "cultural_context": "Hermes governed movement across boundaries: travelers on roads, merchants in marketplaces, heralds between armies, and souls entering the Underworld. Herms, pillar-like images bearing his head, marked roads, doorways, and civic spaces.",
   "domain_role": "Messages, travel, commerce, boundaries, thievery, guidance of souls (psychopomp)",
   "image": "images/greek/hermes.jpg",
   "origin_story": "Son of Zeus and the nymph Maia, Hermes displayed his defining cunning almost immediately after birth. According to the Homeric Hymn to Hermes, he stole Apollo's sacred cattle on the very day he was born, cleverly disguising the animals' tracks, then talked his way out of trouble with wit rather than force. This earned Apollo's grudging respect and a place among the Olympians.",
@@ -12,7 +13,9 @@
     "Served as the official messenger of Zeus and the gods",
     "Guided the souls of the dead to the Underworld as a psychopomp",
     "Invented the lyre, which he later traded to Apollo",
-    "Patron of merchants, travelers, and, pointedly, thieves, reflecting his own trickster origins"
+    "Patron of merchants, travelers, and, pointedly, thieves, reflecting his own trickster origins",
+    "Served as herald and negotiator between gods, mortals, and rival communities",
+    "Guided heroes and the souls of the dead across dangerous boundaries between worlds"
   ],
   "relationships": [
     { "type": "parent", "target": "zeus" },

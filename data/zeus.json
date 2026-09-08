@@ -5,6 +5,7 @@
   "mythology": "Greek",
   "category": "god",
   "summary": "King of the Olympian gods and ruler of the sky, thunder, and law. Zeus presided over Mount Olympus and was regarded as the ultimate authority among gods and mortals alike.",
+  "cultural_context": "Zeus was worshipped in many forms across the Greek world, including Zeus Olympios as ruler of the gods, Zeus Xenios as protector of guests, and Zeus Horkios as guardian of oaths. His cult connected divine authority with justice, hospitality, weather, kingship, and the protection of social order.",
   "domain_role": "Sky, thunder, law, order, kingship of the gods",
   "image": "images/greek/zeus.jpg",
   "origin_story": "Zeus was the youngest son of the Titans Cronus and Rhea. Fearing a prophecy that one of his children would overthrow him, Cronus swallowed each of his children at birth. Rhea hid Zeus at birth, giving Cronus a stone wrapped in cloth to swallow instead. Raised in secret on the island of Crete, Zeus grew to maturity, forced his father to disgorge his swallowed siblings, and led them in the decade-long war against the Titans, known as the Titanomachy. Victorious, Zeus and his brothers divided rule of the cosmos: Zeus took the sky, Poseidon the sea, and Hades the underworld.",
@@ -12,7 +13,9 @@
     "Led the Olympians to victory over the Titans in the Titanomachy",
     "Established the reign of the Olympian gods and became their king",
     "Fathered many major gods and heroes, including Athena, Apollo, Artemis, and Hercules",
-    "Served as the enforcer of oaths, hospitality, and justice among gods and mortals"
+    "Served as the enforcer of oaths, hospitality, and justice among gods and mortals",
+    "Defeated the monstrous forces of Typhon and secured the Olympian order against another cosmic rebellion",
+    "Established major forms of worship connected with guests, oaths, kingship, weather, and the protection of suppliants"
   ],
   "relationships": [
     { "type": "parent", "target": "cronus" },

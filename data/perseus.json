@@ -5,6 +5,7 @@
   "mythology": "Greek",
   "category": "hero",
   "summary": "A legendary Greek hero and son of Zeus, best known for defeating the Gorgon Medusa and rescuing Andromeda from a sea monster.",
+  "cultural_context": "Perseus was treated as an ancestral hero of several Greek cities, especially Argos and Mycenae. His story became a model of divine aid, dangerous travel, and the hero's victory over a monster threatening the human world.",
   "domain_role": "Monster-slayer, questing hero, and founder of dynasties",
   "image": "images/greek/perseus.jpg",
   "origin_story": "Perseus was the son of Zeus and Danae. Danae's father, Acrisius, had been warned by an oracle that her son would one day cause his death, so he shut her away. Zeus reached Danae in the form of golden rain, and after Perseus was born, Acrisius cast mother and child into the sea in a chest. They survived and were taken in by the fisherman Dictys on the island of Seriphos.",
@@ -12,7 +13,9 @@
     "Defeated Medusa by using a polished shield to avoid looking directly at her petrifying gaze",
     "Rescued Andromeda from a sea monster and married her",
     "Used Medusa's severed head to defeat his enemies and fulfill his quest",
-    "Founded the city of Mycenae and established a royal dynasty"
+    "Founded the city of Mycenae and established a royal dynasty",
+    "Saved his mother Danae from King Polydectes by using Medusa's head against the king",
+    "Fulfilled the oracle's prophecy about Acrisius through an accidental discus throw"
   ],
   "relationships": [
     { "type": "father", "target": "zeus" },

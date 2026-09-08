@@ -5,6 +5,7 @@
   "mythology": "Greek",
   "category": "god",
   "summary": "Goddess of wisdom, strategic warfare, and crafts. Patron goddess of the city of Athens, born fully grown and armored from the head of Zeus.",
+  "cultural_context": "Athena was the central patron of Athens, whose major festival, the Panathenaia, celebrated the city's relationship with the goddess through processions, sacrifices, contests, and the presentation of a sacred woven robe. She joined practical skill, civic order, and military intelligence.",
   "domain_role": "Wisdom, strategic warfare, crafts, weaving, civic order",
   "image": "images/greek/athena.jpg",
   "origin_story": "Zeus swallowed his first wife, the Titaness Metis, after a prophecy warned that her children would be wiser and stronger than their father. Some time later, Zeus suffered a tremendous headache; Hephaestus (or in some versions Prometheus) split his skull open, and Athena emerged fully grown, fully armored, and already wise. Unlike most Olympians, she had no conventional childhood.",
@@ -12,7 +13,9 @@
     "Won patronage of Athens over Poseidon by gifting the city the olive tree",
     "Guided and protected numerous heroes, including Odysseus and Perseus",
     "Credited with inventing or perfecting weaving, pottery, and other crafts",
-    "Fought on the side of the Greeks during the Trojan War"
+    "Fought on the side of the Greeks during the Trojan War",
+    "Helped Perseus defeat Medusa by providing strategic guidance and the reflective shield",
+    "Supported Jason and the Argonauts and aided other heroes who relied on planning and technical skill"
   ],
   "relationships": [
     { "type": "parent", "target": "zeus" },
