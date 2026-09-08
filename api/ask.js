@@ -63,7 +63,7 @@ export default async function handler(req, res) {
     const contextPrefix = characterData
       ? `[CHARACTER CONTEXT FOR ${characterName || "this character"}]\n${JSON.stringify(characterData, null, 2)}\n[END CHARACTER CONTEXT]\n\n`
       : "";
-    const recentHistory = Array.isArray(history) ? history.slice(-6) : [];
+    const recentHistory = Array.isArray(history) ? history.slice(-4) : [];
 
     if (recentHistory.length > 0) {
       recentHistory.forEach((turn, idx) => {
@@ -103,7 +103,7 @@ export default async function handler(req, res) {
       config: {
         systemInstruction,
         temperature: 0.2,
-        maxOutputTokens: 2000
+        maxOutputTokens: 1200
       }
     });
 

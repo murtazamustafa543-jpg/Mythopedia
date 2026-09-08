@@ -395,9 +395,9 @@ function typeAnswer(element, text) {
   return new Promise(resolve => {
     let index = 0;
     const step = () => {
-      index = Math.min(index + 12, text.length);
+      index += 1;
       element.innerHTML = formatStreamingText(text.slice(0, index));
-      if (index < text.length) requestAnimationFrame(step);
+      if (index < text.length) setTimeout(step, 16);
       else resolve();
     };
     step();
