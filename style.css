@@ -1003,3 +1003,136 @@ h1.title { font-family: 'Fraunces', serif; font-weight: 400; font-size: 56px; li
 .qa-clear-btn:hover {
   color: var(--oxide) !important;
 }
+
+@media (max-width: 760px) {
+  .page, .home-hero {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  nav {
+    padding: 14px 16px;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 12px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 2px;
+  }
+
+  .greek-collection {
+    padding: 12px;
+  }
+
+  .qa-section {
+    width: 100%;
+    margin-bottom: 28px;
+    padding: 12px;
+  }
+
+  .qa-header h2 {
+    font-size: 20px;
+  }
+
+  .qa-chips {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .qa-chip {
+    width: 100%;
+    min-height: 36px;
+  }
+
+  .qa-form {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .qa-input, .qa-btn {
+    width: 100%;
+    min-height: 42px;
+  }
+
+  .qa-btn {
+    justify-content: center;
+  }
+
+  .qa-msg {
+    padding: 12px 14px;
+  }
+
+  .browse-stats span {
+    flex-basis: 100%;
+  }
+
+  .tabs {
+    gap: 6px;
+  }
+
+  .tab {
+    flex: 1 1 calc(50% - 6px);
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body { overflow-x: hidden; }
+
+  nav { align-items: stretch; }
+  .brand { font-size: 18px; }
+  .nav-links { gap: 10px; font-size: 12px; }
+  .nav-search { width: 100%; min-width: 0; }
+
+  .crumb { padding: 16px 16px 0; line-height: 1.5; }
+  .page { padding: 20px 16px 48px; }
+
+  .home-hero {
+    min-height: 660px;
+    padding: 72px 16px 92px;
+  }
+
+  .home-hero h1, h1.title {
+    font-size: 36px;
+    overflow-wrap: anywhere;
+  }
+
+  .home-hero p, .summary { font-size: 16px; }
+  .hero-action { width: 100%; justify-content: space-between; }
+  .scroll-cue { right: 16px; bottom: 18px; }
+
+  .home-categories { margin-top: 16px; padding: 1px 12px 20px; }
+  .home-stats { grid-template-columns: 1fr 1fr; }
+  .home-stats div { padding: 10px; gap: 4px; flex-direction: column; }
+  .home-stats strong { font-size: 21px; }
+  .gateway a { padding: 18px 16px; }
+
+  .greek-browse-hero {
+    min-height: 260px;
+    margin-bottom: 16px;
+    padding: 24px 18px;
+  }
+  .greek-browse-hero h1 { font-size: 34px; }
+  .browse-search { font-size: 16px; }
+  .section-head { margin: 28px 0 16px; }
+  .section-head h2 { font-size: 21px; }
+
+  .hero { gap: 24px; padding: 24px 0 36px; }
+  .portrait { max-width: 280px; margin: 0 auto; }
+  .alt-name { margin-bottom: 14px; }
+  .content, .media-intro { gap: 28px; }
+  .media-intro { padding: 24px 0 36px; }
+  .landscape-slot, .portrait-slot { min-height: 0; }
+  .portrait-slot { margin-top: 20px; }
+  .content-drawer summary { font-size: 21px; }
+
+  .quote-block { padding-left: 16px; margin-top: 22px; }
+  .quote-block p { font-size: 18px; }
+
+  .search-overlay { padding: 16px; }
+  .search-panel { max-height: 90vh; padding: 20px 16px; }
+  .back-to-top { right: 14px; bottom: 14px; width: 38px; height: 38px; }
+  .boot-error { left: 12px; right: 12px; bottom: 12px; }
+}
