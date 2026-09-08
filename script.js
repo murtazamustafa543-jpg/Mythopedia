@@ -20,6 +20,39 @@ let currentHash = null;
 let renderGen = 0;
 
 const viewEl = () => document.getElementById("view");
+let ambientAudio = null;
+
+function setupMusic() {
+  const toggle = document.getElementById("music-toggle");
+  if (!toggle || toggle.dataset.ready) return;
+  toggle.dataset.ready = "true";
+  ambientAudio = new Audio("audio/greek-ambient.mp3");
+  ambientAudio.loop = true;
+  ambientAudio.volume = 0.24;
+
+  function updateButton(isPlaying) {
+    toggle.classList.toggle("is-playing", isPlaying);
+    toggle.setAttribute("aria-pressed", String(isPlaying));
+    toggle.setAttribute("aria-label", isPlaying ? "Pause ambient music" : "Play ambient music");
+    toggle.querySelector("span").textContent = isPlaying ? "Music on" : "Music off";
+  }
+
+  toggle.addEventListener("click", async () => {
+    if (ambientAudio.paused) {
+      try {
+        await ambientAudio.play();
+        updateButton(true);
+        localStorage.setItem("mythologica_music", "true");
+      } catch {
+        updateButton(false);
+      }
+    } else {
+      ambientAudio.pause();
+      updateButton(false);
+      localStorage.setItem("mythologica_music", "false");
+    }
+  });
+}
 
 function categoryLabel(cat) {
   const labels = { god: "God", hero: "Hero", event: "Event", religion: "Religion & Practice" };
@@ -955,6 +988,7 @@ function updateReadingProgress() {
 
 function wireChrome() {
   document.addEventListener("click", onNavClick);
+  setupMusic();
   document.getElementById("search-toggle")?.addEventListener("click", openSearch);
   document.getElementById("search-close")?.addEventListener("click", closeSearch);
   document.getElementById("search-overlay")?.addEventListener("click", e => {

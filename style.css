@@ -105,6 +105,17 @@ nav {
   cursor: pointer;
 }
 .nav-search:hover { border-color: var(--gold); color: var(--ink); }
+.music-toggle {
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  padding: 8px 12px;
+  border: 1px solid rgba(30,26,20,0.3);
+  background: rgba(255,255,255,0.45);
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.music-toggle:hover,
+.music-toggle.is-playing { border-color: var(--gold); color: var(--ink); background: rgba(255,250,240,0.8); }
 
 /* ---- View transitions ---- */
 .view { min-height: calc(100vh - 80px); }
@@ -705,6 +716,7 @@ h1.title { font-family: 'Fraunces', serif; font-weight: 400; font-size: 56px; li
   nav { padding: 16px 24px; flex-direction: column; align-items: flex-start; gap: 10px; }
   .nav-links { gap: 18px; font-size: 13px; }
   .nav-search { width: 100%; min-width: 0; }
+  .music-toggle { width: 100%; text-align: left; }
   .crumb { padding: 24px 24px 0; }
   h1.title, .home-hero h1 { font-size: 38px; }
   .gateway { grid-template-columns: 1fr; }
