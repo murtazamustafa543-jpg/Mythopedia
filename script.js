@@ -204,7 +204,7 @@ function renderHome() {
         <a class="hero-action" href="#/browse?filter=god" data-nav>Meet the gods</a>
       </div>
       </div>
-      <a class="scroll-cue" href="#home-categories" aria-label="Scroll to explore categories"><span>Explore below</span><span aria-hidden="true">&#8595;</span></a>
+      <a class="scroll-cue" href="#home-categories" aria-label="Scroll to explore categories"></span><span aria-hidden="true">&#8595;</span></a>
     </div>
     <div class="page" style="padding-top:0;">
       <div class="home-categories" id="home-categories">
