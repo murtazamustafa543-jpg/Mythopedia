@@ -1010,6 +1010,10 @@ h1.title { font-family: 'Fraunces', serif; font-weight: 400; font-size: 56px; li
     padding-right: 16px;
   }
 
+  .media-intro {
+    grid-template-columns: 1fr;
+  }
+
   nav {
     padding: 14px 16px;
   }
@@ -1119,6 +1123,23 @@ h1.title { font-family: 'Fraunces', serif; font-weight: 400; font-size: 56px; li
   .section-head { margin: 28px 0 16px; }
   .section-head h2 { font-size: 21px; }
 
+  .tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .tab {
+    width: 100%;
+    min-height: 44px;
+    padding: 9px 8px;
+    font-size: 12px;
+  }
+
+  .tab:last-child {
+    grid-column: 1 / -1;
+  }
+
   .hero { gap: 24px; padding: 24px 0 36px; }
   .portrait { max-width: 280px; margin: 0 auto; }
   .alt-name { margin-bottom: 14px; }
@@ -1127,6 +1148,32 @@ h1.title { font-family: 'Fraunces', serif; font-weight: 400; font-size: 56px; li
   .landscape-slot, .portrait-slot { min-height: 0; }
   .portrait-slot { margin-top: 20px; }
   .content-drawer summary { font-size: 21px; }
+
+  .media-intro .hero-text {
+    order: 1;
+  }
+
+  .media-intro .landscape-slot {
+    order: 2;
+  }
+
+  .content .main {
+    order: 1;
+  }
+
+  .content .sidebar {
+    order: 2;
+  }
+
+  .phase-list,
+  .achievements {
+    padding-left: 22px;
+  }
+
+  .phase-list li,
+  .achievements li {
+    margin-bottom: 16px;
+  }
 
   .quote-block { padding-left: 16px; margin-top: 22px; }
   .quote-block p { font-size: 18px; }
