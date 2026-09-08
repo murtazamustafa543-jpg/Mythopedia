@@ -21,8 +21,8 @@
   ],
   "symbols": ["Spear", "Helmet", "Vulture", "Dog"],
   "signature_quote": {
-    "text": "The Iliad repeatedly contrasts Ares's chaotic bloodlust with Athena's calculated approach to combat, using the two gods to embody opposite faces of war."
-    
+    "text": "Ares, Ares, bane of mortals, bloodstained, stormer of cities!",
+    "note": "These fierce epithets capture Ares as the violent and destructive face of war, in contrast with Athena's strategy and discipline."
   },
   "related_events": ["trojan-war"],
   "sources": [

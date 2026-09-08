@@ -252,6 +252,7 @@ function renderBrowse(params) {
         <div class="oxide-rule"></div>
       </div>
       <div class="greek-collection">
+      ${qaSectionHTML({ id: "greek", name: "Greek mythology" })}
       <input class="browse-search" id="browse-search" type="search" placeholder="Filter this list…" value="${escapeHtml(query)}">
       <div class="browse-stats">
         <span><strong>${catalog.greek.length}</strong> entries</span>
@@ -270,7 +271,6 @@ function renderBrowse(params) {
       <div class="grid" id="landing-grid">
         ${filtered.length ? filtered.map(browseCardHTML).join("") : `<p class="empty-state">No entries match “${escapeHtml(query)}”.</p>`}
       </div>
-      ${qaSectionHTML({ id: "greek", name: "Greek mythology" })}
       </div>
     </div>`;
 }

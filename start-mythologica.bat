@@ -9,4 +9,4 @@ if not exist "node_modules\@google\genai" (
 
 start "Mythologica Server" cmd /k "cd /d "%~dp0" && npm start"
 timeout /t 2 /nobreak >nul
-start "" "http://localhost:3000/#/browse"
+start "" "http://localhost:3000/"

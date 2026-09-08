@@ -121,8 +121,8 @@ const server = http.createServer(async (req, res) => {
 server.listen(PORT, () => {
   const hasKey = Boolean(process.env.GEMINI_API_KEY && process.env.GEMINI_API_KEY !== "your_gemini_api_key_here");
   console.log(`\n======================================================`);
-  console.log(`🏛️  Mythologica server running at: http://localhost:${PORT}`);
-  console.log(`🔑  Gemini API Key: ${hasKey ? "Configured ✓" : "Missing ⚠ (Check .env file)"}`);
-  console.log(`🤖  Model: ${process.env.GEMINI_MODEL || "gemini-3.6-flash"}`);
+  console.log(`  Mythologica server running at: http://localhost:${PORT}`);
+  console.log(`  Gemini API Key: ${hasKey ? "Configured ✓" : "Missing ⚠ (Check .env file)"}`);
+  console.log(`  Model: ${process.env.GEMINI_MODEL || "gemini-3.6-flash"}`);
   console.log(`======================================================\n`);
 });

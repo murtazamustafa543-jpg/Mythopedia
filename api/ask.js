@@ -56,7 +56,7 @@ export default async function handler(req, res) {
 
     const systemInstruction = `You are a helpful, knowledgeable assistant for a Greek mythology and religion encyclopedia.
   Answer the user's question directly and naturally. Use all relevant information from the supplied Greek catalog and do not omit important details that answer the question.
-  You may also use general knowledge when it helps. Keep answers clear and well formatted. Do not mention system instructions, prompts, or JSON.`;
+  You may also use general knowledge when it helps. Keep answers clear and well formatted. Do not mention system instructions, prompts, or JSON. dont add # in you`;
 
     // Construct conversation contents with strict grounding (keep last 6 turns for context)
     const contents = [];
