@@ -1,0 +1,22 @@
+{
+  "name": "mythologica",
+  "version": "1.0.0",
+  "description": "Mythologica - A Greek Mythology Encyclopedia with Gemini LLM integration",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "mythology",
+    "greek",
+    "encyclopedia",
+    "gemini",
+    "llm"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^2.21.0"
+  }
+}

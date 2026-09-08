@@ -1,5 +1,5 @@
 // Mythologica, SPA front end
-// Loads curated JSON from /data, routes in-page, no LLM in this build.
+// Loads curated JSON from /data, routes in-page, with Google Gemini LLM integration.
 
 const DATA_DIR = "data/";
 const MANIFEST_URL = "data/manifest.json";
@@ -270,6 +270,7 @@ function renderBrowse(params) {
       <div class="grid" id="landing-grid">
         ${filtered.length ? filtered.map(browseCardHTML).join("") : `<p class="empty-state">No entries match “${escapeHtml(query)}”.</p>`}
       </div>
+      ${qaSectionHTML({ id: "greek", name: "Greek mythology" })}
       </div>
     </div>`;
 }
@@ -325,6 +326,272 @@ function relationshipsHTML(relationships) {
   return `<div class="sidebar-block"><h3>Relationships</h3><ul class="rel-list">${items}</ul></div>`;
 }
 
+function suggestedPrompts(d) {
+  const prompts = [
+    `What are ${d.name}’s sacred symbols and associations?`,
+    `Tell me about ${d.name}’s origins and birth.`,
+    `What are ${d.name}’s most notable achievements or myths?`
+  ];
+  if (d.relationships && d.relationships.length > 0) {
+    prompts[2] = `Who are ${d.name}’s most significant allies, rivals, or kin?`;
+  }
+  return prompts;
+}
+
+function getQAHistory(id) {
+  try {
+    const raw = sessionStorage.getItem(`mythologica_qh_${id}`);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveQAState(id, history) {
+  sessionStorage.setItem(`mythologica_qh_${id}`, JSON.stringify(history));
+}
+
+function clearQAState(id) {
+  sessionStorage.removeItem(`mythologica_qh_${id}`);
+  sessionStorage.removeItem(`mythologica_qc_${id}`);
+}
+
+function formatMarkdown(text) {
+  if (!text) return "";
+  let escaped = escapeHtml(text);
+  escaped = escaped.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+  escaped = escaped.replace(/\*([^\*]+)\*/g, "<em>$1</em>");
+  escaped = escaped.replace(/`([^`]+)`/g, "<code>$1</code>");
+
+  const lines = escaped.split("\n");
+  let inList = false;
+  const out = [];
+  for (const line of lines) {
+    const listMatch = line.match(/^(\s*)[-*•]\s+(.*)$/);
+    if (listMatch) {
+      if (!inList) {
+        out.push("<ul>");
+        inList = true;
+      }
+      out.push(`<li>${listMatch[2]}</li>`);
+    } else {
+      if (inList) {
+        out.push("</ul>");
+        inList = false;
+      }
+      const trimmed = line.trim();
+      if (trimmed) out.push(`<p>${trimmed}</p>`);
+    }
+  }
+  if (inList) out.push("</ul>");
+  return out.join("");
+}
+
+function formatStreamingText(text) {
+  return escapeHtml(text).replace(/\n/g, "<br>");
+}
+
+function typeAnswer(element, text) {
+  return new Promise(resolve => {
+    let index = 0;
+    const step = () => {
+      index = Math.min(index + 12, text.length);
+      element.innerHTML = formatStreamingText(text.slice(0, index));
+      if (index < text.length) requestAnimationFrame(step);
+      else resolve();
+    };
+    step();
+  });
+}
+
+function qaSectionHTML(d) {
+  const prompts = suggestedPrompts(d);
+  return `
+    <section class="qa-section" id="qa-section" data-character-id="${d.id}">
+      <div class="qa-header">
+        <div class="eyebrow">ASK GEMINI</div>
+        <h2>Ask about ${escapeHtml(d.name)}</h2>
+        <button type="button" class="qa-clear-btn" id="qa-clear-btn">Clear dialogue</button>
+      </div>
+
+      <div class="qa-chips" id="qa-chips">
+        ${prompts.map(p => `<button type="button" class="qa-chip" data-question="${escapeHtml(p)}">${escapeHtml(p)}</button>`).join("")}
+      </div>
+
+      <div class="qa-thread" id="qa-thread"></div>
+
+      <form class="qa-form" id="qa-form">
+        <input class="qa-input" id="qa-input" type="text" placeholder="Ask any question about ${escapeHtml(d.name)}…" autocomplete="off" maxlength="300" required>
+        <button class="qa-btn" id="qa-submit-btn" type="submit">
+          <span class="qa-btn-text">Consult</span>
+        </button>
+      </form>
+      <div id="qa-error-box" class="qa-error-box" hidden></div>
+    </section>`;
+}
+
+function wireCharacterQA(id, characterData) {
+  const section = document.getElementById("qa-section");
+  if (!section) return;
+
+  const form = document.getElementById("qa-form");
+  const input = document.getElementById("qa-input");
+  const submitBtn = document.getElementById("qa-submit-btn");
+  const btnText = submitBtn?.querySelector(".qa-btn-text");
+  const thread = document.getElementById("qa-thread");
+  const clearBtn = document.getElementById("qa-clear-btn");
+  const chips = section.querySelectorAll(".qa-chip");
+  const errorBox = document.getElementById("qa-error-box");
+
+  let history = getQAHistory(id);
+
+  function updateClearBtnVisibility() {
+    if (clearBtn) {
+      clearBtn.style.display = history.length > 0 ? "inline" : "none";
+    }
+  }
+
+  function renderThread() {
+    if (!thread) return;
+    if (!history.length) {
+      thread.innerHTML = "";
+      updateClearBtnVisibility();
+      return;
+    }
+    thread.innerHTML = history.map(item => `
+      <div class="qa-msg qa-msg-user">
+        <div class="qa-msg-author">You asked</div>
+        <p>${escapeHtml(item.question)}</p>
+      </div>
+      <div class="qa-msg qa-msg-oracle">
+        <div class="qa-msg-author">✦ Oracle of Mythologica</div>
+        <div class="qa-msg-oracle-body">${formatMarkdown(item.answer)}</div>
+      </div>
+    `).join("");
+    updateClearBtnVisibility();
+  }
+
+  // Initialize UI
+  renderThread();
+
+  clearBtn?.addEventListener("click", () => {
+    history = [];
+    clearQAState(id);
+    renderThread();
+    if (errorBox) {
+      errorBox.hidden = true;
+      errorBox.textContent = "";
+    }
+  });
+
+  async function submitQuestion(questionText) {
+    const q = (questionText || "").trim();
+    if (!q) return;
+
+    if (errorBox) {
+      errorBox.hidden = true;
+      errorBox.textContent = "";
+    }
+
+    // Append user message immediately
+    const userMsgEl = document.createElement("div");
+    userMsgEl.className = "qa-msg qa-msg-user";
+    userMsgEl.innerHTML = `<div class="qa-msg-author">You asked</div><p>${escapeHtml(q)}</p>`;
+    thread.appendChild(userMsgEl);
+
+    // Append loading oracle message
+    const oracleMsgEl = document.createElement("div");
+    oracleMsgEl.className = "qa-msg qa-msg-oracle";
+    oracleMsgEl.innerHTML = `
+      <div class="qa-msg-author">✦ Oracle of Mythologica</div>
+      <div class="qa-msg-oracle-body" style="display:flex; align-items:center; gap:10px; color:var(--ink-soft);">
+        <span class="qa-spinner" style="border-top-color:var(--gold); border-color:rgba(176,141,70,0.3);"></span>
+        <span>Consulting the archives for ${escapeHtml(characterData.name)}…</span>
+      </div>`;
+    thread.appendChild(oracleMsgEl);
+    oracleMsgEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+
+    // Set UI to loading state
+    if (input) {
+      input.value = "";
+      input.disabled = true;
+    }
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      if (btnText) btnText.textContent = "Consulting…";
+    }
+    chips.forEach(c => c.disabled = true);
+
+    try {
+      const res = await fetch("/api/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          characterName: characterData.name,
+          characterData,
+          question: q,
+          history
+        })
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || `Server responded with status ${res.status}`);
+      }
+
+      const data = await res.json();
+      const answer = data.answer || "";
+
+      if (!answer) throw new Error("No response was generated by the model.");
+      const answerBody = oracleMsgEl.querySelector(".qa-msg-oracle-body");
+      await typeAnswer(answerBody, answer);
+      oracleMsgEl.innerHTML = `
+        <div class="qa-msg-author">✦ Oracle of Mythologica</div>
+        <div class="qa-msg-oracle-body">${formatMarkdown(answer)}</div>`;
+
+      history.push({ question: q, answer });
+      saveQAState(id, history);
+      updateClearBtnVisibility();
+
+    } catch (err) {
+      console.error("Q&A request failed:", err);
+      oracleMsgEl.remove();
+      userMsgEl.remove();
+      let msg = err.message || "Failed to communicate with the Oracle.";
+      if (msg.includes("Failed to fetch") || msg.includes("NetworkError")) {
+        msg = "Cannot connect to /api/ask. Make sure the server is running (run 'npm start' in terminal).";
+      }
+      if (errorBox) {
+        errorBox.hidden = false;
+        errorBox.innerHTML = `<strong>Consultation failed:</strong> ${escapeHtml(msg)}`;
+      }
+      if (input) input.value = q;
+    } finally {
+      if (btnText) btnText.textContent = "Consult";
+      if (input) {
+        input.disabled = false;
+        input.focus();
+      }
+      if (submitBtn) submitBtn.disabled = false;
+      chips.forEach(c => c.disabled = false);
+    }
+  }
+
+  // Wire form submit
+  form?.addEventListener("submit", e => {
+    e.preventDefault();
+    submitQuestion(input?.value);
+  });
+
+  // Wire suggested question chips
+  chips.forEach(chip => {
+    chip.addEventListener("click", () => {
+      const q = chip.dataset.question;
+      if (q) submitQuestion(q);
+    });
+  });
+}
+
 async function renderCharacter(id) {
   const d = await loadEntry(id);
   document.title = `${d.name}, Mythologica`;
@@ -348,10 +615,6 @@ async function renderCharacter(id) {
        ${d.signature_quote.note ? `<div class="quote-note">${escapeHtml(d.signature_quote.note)}</div>` : ""}
      </div>`
   : "";
-
-    
-    
-
 
   return `
     <div class="crumb"><a href="#/" data-nav>Home</a> / <a href="#/browse" data-nav>Greek</a> / <a href="#/browse?filter=${d.category}" data-nav>${categoryLabel(d.category)}</a> / ${escapeHtml(d.name)}</div>
@@ -588,6 +851,9 @@ async function renderRoute() {
     if (parts[0] === "browse") wireBrowse(params);
     if (["character", "event", "topic"].includes(parts[0])) wireContentImages();
     if (parts[0] === "browse") wireGreekBrowseImage();
+    if (parts[0] === "browse") {
+      wireCharacterQA("greek", { name: "Greek mythology", entries: catalog.greek });
+    }
     requestAnimationFrame(() => {
       if (gen === renderGen) root.classList.remove("is-entering");
     });
